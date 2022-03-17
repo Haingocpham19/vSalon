@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Inter";
-    src: url(https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap);
+    src: url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap");
   }
   
   body{
@@ -11,6 +11,7 @@
     background-image: linear-gradient( #40B649,#7AC242);
     width: 100vw;
     min-height: 100vh;
+    color: #fff;
   }
   *,
   h1,
@@ -30,6 +31,11 @@
     margin-top: 0;
     margin-bottom: 0; 
   }
+  a{
+      text-decoration:none;
+      color:white;
+  }
+
     .inner{
         max-width: 1200px;
         width: 100%;
@@ -49,35 +55,86 @@
                 margin-top:60px;
                 min-height: 28vh;
                 form{
-                    width: 70%;
-                    margin:auto;
-
-                    & .input-info{
+                    width: 80%;
+                    margin:auto;                 
+                    & .input-handle{
+                        position: relative;
                         border-radius: 4px;
                         border:none;
                         display:block;
-                        height:64px;
+                        height:54px;
                         margin:auto;
-                        min-width: 92%;
+                        width:100%;
                         margin-top:20px;
+                        padding-left: 20px;
+                        outline:none;
+                       
+                    }       
+                    #input-pwd{
+                        position: relative;
+                        & .field-icon{
+                        
+                            position: absolute;
+                            color:#000;
+                            top:30%;
+                            right:3%;
+                            opacity: 0.3;
+                            z-index: 2;
+                            
+                        }           
                     }
+
                     ::placeholder{
-                        padding-left:20px;
                         opacity: 0.5;
-                        font-size:18px;
+                        font-size:14px;
                     }
-                    & .footer-form{
-                        margin-top:10px;
-                        // & input{
-                        //     height:30px;
-                        // }
-                        // label{
-                        //     font-size:24px;
-                        //     font-weight: 500;
-                        // }
+                    .footer-form{
+                        width:100%;
+                        margin:auto;
+                        margin-top:20px;
+                        display:flex;
+                        justify-content: space-between;
+                        margin-bottom:60px;
+                        .remember-account{
+                            label{
+                                & .largeCheckbox{    
+                                    border-radius: 6px;
+                                    box-sizing: border-box; 
+                                    background:transparent !important;
+                                }
+                                font-size:10px;
+                                font-weight: 500;      
+                                a{
+                                    padding-left:8px;
+                                    font-size:14px;
+                                    font-weight: 300;
+                                }               
+                            }
+                        }
+                        .remember-pwd{
+                            a{
+                                text-decoration:underline;
+                                font-size:12px;
+                                font-weight: 300;
+                            }
+                        }
+                      
                     }
-                    
+                    & button{
+                        display:block;
+                        margin:auto;
+                        width:100%;
+                        height:48px;
+                        background-color:#F9C52C;
+                        border-radius: 6px;
+                        border:none;
+                        color:white;
+                        font-size:16px;
+                        font-weight:550;
+                        cursor:pointer;
+                    }
                 }         
+                
             }
         }       
     }

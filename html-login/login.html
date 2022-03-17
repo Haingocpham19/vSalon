@@ -6,22 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <!-- bootstrap -->
     <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- font awesome -->
     <link href="/node_modules/font-awesome/css/font-awesome.css">
+    <!-- Google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap" rel="stylesheet">
+
     <link href="/html-login/login.css" rel="stylesheet">
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
-        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -32,18 +28,25 @@
                 <div class="form-login">
                     <form>
                         <div class="col-12">
-                            <input type="text" class="input-info" placeholder="Tên đăng nhập">
+                            <input type="text" class="input-handle" placeholder="Tên đăng nhập">
                         </div>
-                        <div class="col-12">
-                            <input type="text" class="input-info" placeholder="Mật khẩu">
+                        <div class="col-12" id="input-pwd">
+                            <input type="text" class="input-handle"  placeholder="Mật khẩu">
+                            </input>
+                            <i class="bi bi-eye-slash field-icon"></i>
                         </div>
-                        <div class="footer-form d-flex justify-content-between">
-                            <label>
-                                <input type="checkbox" name="remember">
-                                Nhớ mật khẩu
-                            </label>
-                            <a href="#">Quên mật khẩu?</a>
+                        <div class="footer-form">
+                            <div class="remember-account">
+                                <label class="d-flex">
+                                    <input type="checkbox" name="remember" class="largeCheckbox">
+                                    <a href="#">Nhớ tài khoản</a>
+                                </label>
+                            </div>                    
+                            <div class="remember-pwd">
+                                <a href="#">Quên mật khẩu?</a>
+                            </div>
                         </div>
+                        <button type="submit">ĐĂNG NHẬP</button>
                     </form>
                 </div>
             </div>
