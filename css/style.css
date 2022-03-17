@@ -1,0 +1,21 @@
+@font-face { font-family: "Inter"; src: url(https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap); }
+body { font-family: Inter; font-weight: 500; max-width: 1920px; margin: 0 auto; background-color: #E5E5E5; width: 100vw; height: auto; }
+
+a { color: black !important; }
+
+a:hover { color: red; }
+
+*, h1, h2, h3, h4, h5, h6, ul, li, p { margin: 0; padding: 0; box-sizing: border-box; }
+
+dl, ol, ul { margin-top: 0; margin-bottom: 0; }
+
+header { overflow: hidden; background-color: #fff; }
+
+.fixed { position: fixed; z-index: 99; width: 100vw; box-shadow: 0 0 6px #f1f1f1; }
+
+.inner { max-width: 1440px; width: 100%; margin: 0 auto; }
+
+.header-section { width: 100%; position: relative; }
+.header-section .inner { min-height: 80px; width: 100%; margin: 0 auto; }
+
+/*# sourceMappingURL=style.css.map */
