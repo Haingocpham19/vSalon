@@ -72,15 +72,14 @@
                     }       
                     #input-pwd{
                         position: relative;
-                        & .field-icon{
-                        
+                        .field-icon{
                             position: absolute;
                             color:#000;
                             top:30%;
                             right:3%;
                             opacity: 0.3;
                             z-index: 2;
-                            
+                            cursor: pointer;
                         }           
                     }
 
@@ -100,6 +99,7 @@
                                 & .largeCheckbox{    
                                     border-radius: 6px;
                                     box-sizing: border-box; 
+                                    transform:scale(1.5);
                                     background:transparent !important;
                                 }
                                 font-size:10px;
@@ -160,6 +160,7 @@ $desktop-width: 1024px;
 }  
 
 @mixin desktop {   @media (min-width: #{$desktop-width}) {     
-  @content;  
+  
+   
  } 
 }

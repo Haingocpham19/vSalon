@@ -31,9 +31,9 @@
                             <input type="text" class="input-handle" placeholder="Tên đăng nhập">
                         </div>
                         <div class="col-12" id="input-pwd">
-                            <input type="text" class="input-handle"  placeholder="Mật khẩu">
+                            <input type="password" class="input-handle"id="id_password"  placeholder="Mật khẩu">
                             </input>
-                            <i class="bi bi-eye-slash field-icon"></i>
+                            <i class="bi bi-eye-slash field-icon" id="togglePassword"></i>
                         </div>
                         <div class="footer-form">
                             <div class="remember-account">
@@ -53,5 +53,16 @@
         </div>
     </section>
 </body>
+<script>
+    const togglePassword = document.querySelector('#togglePassword');
+    const password = document.querySelector('#id_password');
 
+    togglePassword.addEventListener('click', function (e) {
+        // toggle the type attribute
+        const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+        password.setAttribute('type', type);
+        // toggle the eye slash icon
+        this.classList.toggle('bi-eye');
+    });
+</script>
 </html>
