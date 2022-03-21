@@ -23,24 +23,25 @@
 <body>
     <section>
         <div class="inner">
-            <div class="col-12 d-flex justify-content-center">
+            <div>
                 <img src="../images/Frame.png">
                 <div class="form-login">
                     <form>
-                        <div class="col-12">
-                            <input type="text" class="input-handle" placeholder="Tên đăng nhập">
-                        </div>
-                        <div class="col-12" id="input-pwd">
-                            <input type="password" class="input-handle"id="id_password"  placeholder="Mật khẩu">
+                        <input type="text" class="input-handle" placeholder="Tên đăng nhập">
+                        <div id="input-pwd">
+                            <input type="password" class="input-handle" id="id_password"  placeholder="Mật khẩu">
                             </input>
                             <i class="bi bi-eye-slash field-icon" id="togglePassword"></i>
                         </div>
                         <div class="footer-form">
                             <div class="remember-account">
-                                <label class="d-flex">
-                                    <input type="checkbox" name="remember" class="largeCheckbox">
-                                    <a href="#">Nhớ tài khoản</a>
-                                </label>
+                                <div class="check">
+                                    <label class="checkbox-label py-2 text-white">
+                                        <input type="checkbox">
+                                        <span class="mark"></span>
+                                        <span class="text-nowrap" style="margin-left: 10px;">Nhớ tài khoản</span>
+                                    </label>
+                                </div>
                             </div>                    
                             <div class="remember-pwd">
                                 <a href="#">Quên mật khẩu?</a>
@@ -52,6 +53,7 @@
             </div>
         </div>
     </section>
+    
 </body>
 <script>
     const togglePassword = document.querySelector('#togglePassword');

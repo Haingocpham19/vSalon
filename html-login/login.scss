@@ -66,20 +66,20 @@
                         margin:auto;
                         width:100%;
                         margin-top:20px;
-                        padding-left: 20px;
-                        outline:none;
-                       
+                        padding:0 40px 0 20px;
+                        outline:none;          
                     }       
                     #input-pwd{
                         position: relative;
                         .field-icon{
                             position: absolute;
                             color:#000;
-                            top:30%;
-                            right:3%;
+                            top:50%;
+                            right:5%;
                             opacity: 0.3;
                             z-index: 2;
                             cursor: pointer;
+                            transform:translateY(-50%);
                         }           
                     }
 
@@ -102,13 +102,8 @@
                                     transform:scale(1.5);
                                     background:transparent !important;
                                 }
-                                font-size:10px;
-                                font-weight: 500;      
-                                a{
-                                    padding-left:8px;
-                                    font-size:14px;
-                                    font-weight: 300;
-                                }               
+                                font-size:16px;
+                                font-weight: 500;             
                             }
                         }
                         .remember-pwd{
@@ -137,6 +132,38 @@
                 
             }
         }       
+    }
+    .check {
+        position: relative;
+        .checkbox-label {
+            cursor: pointer;
+            input {
+                opacity: 0;
+            }
+            .mark {
+                position:absolute;
+                left: 0;
+                height: 20px;
+                width: 20px;
+                background-color: transparent;
+                border-radius: 5px;
+                border: 2px solid white;
+            }
+            .mark::after {
+                position: absolute;
+                content: "";
+                border-radius: 5px;
+            }
+            input:checked ~ .mark::after {
+                transform: rotate(45deg) scale(1);
+                left: 5px;
+                top: 1px;
+                width: 6px;
+                height: 12px;
+                border: solid #ffff;
+                border-width: 0 2px 2px 0;
+              }
+        }
     }
 
 
