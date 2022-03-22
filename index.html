@@ -12,7 +12,8 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500&display=swap" rel="stylesheet" type="text/css">
+
 
     <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
@@ -20,11 +21,15 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
+    <!-- animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
 </head>
 
 <body>
+    <!-- header fixed -->
     <header class="fixed">
         <div class="header-section">
             <div class="inner row">
@@ -42,26 +47,74 @@
                         </div>
                         <div class="change-stuff d-flex justify-content-around">
                             <div class="change-language">
-                                <img src="/images/2560px-Flag_of_Vietnam.svg.png" width="24px" height="17.14px">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                                </svg>
+                                <div class="flag-item">
+                                    <img src="/images/2560px-Flag_of_Vietnam.svg.png" width="24px" height="17.14px">
+                                    vi
+                                </div>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <a href="#">vn</a>
+                                    <a href="#">vn</a>
+                                    <a href="#">vn</a>
+                                    <a href="#">vn</a>
+                                </div>
+                                <div class="dropbtn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </div>
                             </div>
                             <div class="action-login-register ">
                                 <button>Đăng ký</button>
                                 <button>Đăng nhập</button>
                             </div>
                         </div>
+                        <label for="nav-mobile-input" class="nav__bars-btn" id="btn-bars">
+                            <img src="/images/bars-solid.svg">
+                        </label>
+                        <input type="checkbox" class="nav__input" id="nav-mobile-input">
+                        <label for="nav-mobile-input" class="nav__overlay">
+
+                        </label>
+                        <div class="nav__mobile">
+                            <div class="nav_mobile_header d-flex justify-content-around">
+                                <img src="../images/logo.svg">
+                                <label for="nav-mobile-input" class="pt-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                        class="bi bi-x" viewBox="0 0 16 16">
+                                        <path
+                                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </label>
+                            </div>
+                            <ul class="nav__mobile-list">
+                                <li>
+                                    <a href="" class="nav__mobile-link">Danh mục</a>
+                                </li>
+                                <li>
+                                    <a href="" class="nav__mobile-link">Tính năng</a>
+                                </li>
+                                <li>
+                                    <a href="" class="nav__mobile-link">Bảng giá</a>
+                                </li>
+                                <li>
+                                    <a href="" class="nav__mobile-link">Ứng dụng Moblie</a>
+                                </li>
+                                <li>
+                                    <a href="" class="nav__mobile-link">Phản hồi</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </header>
-
+    <!-- slide -->
     <div class="stuff">
-        <div class="container-fluid introduction">
+        <div class="introduction">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -104,30 +157,120 @@
         </div>
     </div>
     </div>
+    <!-- loi ich khi su dung vSalon -->
     <div class="benefit-intro">
-        <div class="container">
+        <div class="animate__fadeInUp">
             <h2>Lợi ích khi sử dụng <span>vSalon</span></h2>
             <h6>Hãy để chúng tôi đồng hành cùng thành công của bạn</h6>
-            <div class="slide-carousel row">
-                <div class="intro">
-                    <img src="/images/icon-intro-1.png">
+        </div>
+        <div class="wrap">
+            <div class="slider">
+                <div class="item">
+                    <div class="frame">
+                        <img class="icon-benefit" src="/images/icon-intro-1.png">
+                        <h3>Gắn kết khách hàng</h3>
+                        <p>Đem đến sự chuyên nghiệp và trải nghiệm dịch vụ tốt nhất cho khách.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="frame">
+                        <img class="icon-benefit" src="/images/icon-intro-2.png">
+                        <h3>Điều phối lịch hẹn</h3>
+                        <p>Giúp nhân viên tăng năng xuất làm việc. Quản lý hiệu quả từ xa.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="frame">
+                        <img class="icon-benefit" src="/images/icon-intro-3.png">
+                        <h3>Quản lý hiệu quả</h3>
+                        <p>Đem đến sự chuyên nghiệp và trải nghiệm dịch vụ tốt nhất cho khách.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="frame">
+                        <img class="icon-benefit" src="/images/icon-intro-1.png">
+                        <h3>Gắn kết khách hàng</h3>
+                        <p>Đem đến sự chuyên nghiệp và trải nghiệm dịch vụ tốt nhất cho khách.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="frame">
+                        <img class="icon-benefit" src="/images/icon-intro-2.png">
+                        <h3>Điều phối lịch hẹn</h3>
+                        <p>Giúp nhân viên tăng năng xuất làm việc. Quản lý hiệu quả từ xa.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="frame">
+                        <img class="icon-benefit" src="/images/icon-intro-3.png">
+                        <h3>Quản lý hiệu quả</h3>
+                        <p>Đem đến sự chuyên nghiệp và trải nghiệm dịch vụ tốt nhất cho khách.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="frame">
+                        <img class="icon-benefit" src="/images/icon-intro-1.png">
+                        <h3>Gắn kết khách hàng</h3>
+                        <p>Đem đến sự chuyên nghiệp và trải nghiệm dịch vụ tốt nhất cho khách.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="frame">
+                        <img class="icon-benefit" src="/images/icon-intro-2.png">
+                        <h3>Điều phối lịch hẹn</h3>
+                        <p>Giúp nhân viên tăng năng xuất làm việc. Quản lý hiệu quả từ xa.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="frame">
+                        <img class="icon-benefit" src="/images/icon-intro-3.png">
+                        <h3>Quản lý hiệu quả</h3>
+                        <p>Đem đến sự chuyên nghiệp và trải nghiệm dịch vụ tốt nhất cho khách.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- loi ich khi su dung vSalon mobile -->
+    <div class="inner benefit-intro-mobile">
+        <div class="one-time">
+            <div class="item">
+                <div class="frame">
+                    <img class="icon-benefit" src="/images/icon-intro-1.png">
                     <h3>Gắn kết khách hàng</h3>
                     <p>Đem đến sự chuyên nghiệp và trải nghiệm dịch vụ tốt nhất cho khách.
                     </p>
                 </div>
-                <div class="intro center">
-                    <img src="/images/icon-intro-2.png">
+            </div>
+            <div class="item">
+                <div class="frame">
+                    <img class="icon-benefit" src="/images/icon-intro-2.png">
                     <h3>Điều phối lịch hẹn</h3>
-                    <p>Không còn lo lắng khi quên hẹn lịch hẹn với khách hàng</p>
+                    <p>Giúp nhân viên tăng năng xuất làm việc. Quản lý hiệu quả từ xa.
+                    </p>
                 </div>
-                <div class="intro">
-                    <img src="/images/icon-intro-3.png">
+            </div>
+            <div class="item">
+                <div class="frame">
+                    <img class="icon-benefit" src="/images/icon-intro-3.png">
                     <h3>Quản lý hiệu quả</h3>
-                    <p>Giúp nhân viên tăng năng xuất làm việc. Quản lý hiệu quả từ xa</p>
+                    <p>Đem đến sự chuyên nghiệp và trải nghiệm dịch vụ tốt nhất cho khách.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
+    <!-- gioi thieu tinh nang cua ung dung -->
     <div class="feature-insite">
         <div class="inner">
             <div class="feature-header">
@@ -277,69 +420,101 @@
             </div>
         </div>
     </div>
-
+    <!-- bang gia -->
     <div class="price-list-product">
         <div class="inner">
             <h2>Bảng giá phần mềm quản lý <span>Sapa, salon vSalon</span></h2>
             <h6>Hãy lựa chọn gói giải pháp phù hợp với nhu cầu của bạn và dùng thử miễn phí 30 ngày</h6>
             <div class="price-list-items">
-                <div class="row justify-center">
-                    <div class="col-md-4 col-xs-12 col-sm-12 price-item">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6 col-sm-12 price-item">
                         <div class="choose-hover">
                             <h3>GÓI CƠ BẢN</h3>
                             <p>Dành cho cửa hàng nhỏ , mới bắt đầu kinh doanh</p>
-                            <h2>139.000 vnd</h2>
                         </div>
+                        <h2>139.000 vnd</h2>
                         <ul>
                             <li>
+                                <span><img src="/images/check-xanh.svg" alt=""></span>
                                 1 cửa hàng hàng tháng
                             </li>
                             <li>
+                                <span><img src="/images/check-xanh.svg" alt=""></span>
                                 Không giới hạn người dùng
                             </li>
                             <li>
+                                <span><img src="/images/check-xanh.svg" alt=""></span>
                                 Không giới hạn tính năng
                             </li>
                             <li>
+                                <span><img src="/images/check-xanh.svg" alt=""></span>
                                 Không phí khởi tạo
                             </li>
                         </ul>
-                        <div class="footer-pack" >
+                        <div class="footer-pack">
                             <button>Dùng thử ngay</button>
-                        </div>                    </div>
-                    <div class="col-md-4 col-xs-12 col-sm-12 price-item-intro">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 price-item-intro">
                         <img src="/images/image-intro-price-list.png">
                         <p>Lưu ý :<span> Gói cơ bản</span> chỉ áp dụng cho 1 cửa hàng, để mua thêm cửa hàng mời quý
                             khách nâng cấp
                             lên gói <span>nâng cao</span>.
                         </p>
                     </div>
-                    <div class="col-md-4 col-xs-12 col-sm-12 price-item">
+                    <div class="col-lg-4 col-md-6 col-sm-12 price-item">
                         <div class="choose-hover">
                             <h3 class="advanced-pack">GÓI NÂNG CAO</h3>
                             <p>Dành cho mô hình kinh doanh chuỗi</p>
-                            <h2>289.000 vnd</h2>
                         </div>
+                        <h2>289.000 vnd</h2>
                         <ul>
                             <li>
+                                <span><img src="/images/check-vang.svg" alt=""></span>
                                 1 cửa hàng hàng tháng
                             </li>
                             <li>
+                                <span><img src="/images/check-vang.svg" alt=""></span>
                                 Không giới hạn người dùng
                             </li>
                             <li>
+                                <span><img src="/images/check-vang.svg" alt=""></span>
                                 Thêm chi nhánh 99.000 đ/tháng
                             </li>
                             <li>
+                                <span><img src="/images/check-vang.svg" alt=""></span>
                                 Không giới hạn tính năng
                             </li>
                             <li>
+                                <span><img src="/images/check-vang.svg" alt=""></span>
                                 Không phí khởi tạo
                             </li>
                         </ul>
-                        <div class="footer-pack" >
+                        <div class="footer-pack">
                             <button>Dùng thử ngay</button>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="background-body">
+            <h3>
+                Hãy dùng thử miễn phí phần mềm trước, vSalon sẽ tư vấn cho bạn gói dịch vụ phù hợp sau nhé!
+            </h3>
+            <div class="btn-adv">
+                <button>Dùng thử ngay</button>
+            </div>
+        </div>
+    </div>
+    <div class="adv-app">
+        <div class="inner">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 left-adv-app">
+                    <h2>Ứng dụng quản lý salon miễn phí<span> trên điện thoại</span></h2>
+                    <p>Quản lý thuận tiện, cập nhật kịp thời với ứng dụng dành cho mobile và tablet.</p>
+                    <div class="btn-appstore">
+                        <img src="/images/appstore.png" alt="">
+                        <img src="/images/googleplay.png">
                     </div>
                 </div>
             </div>
@@ -349,7 +524,44 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- slide benefit pc -->
+    <script>
+        $('.slider').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: false,
+            dots: false,
+            centerMode: true,
+            variableWidth: true,
+            infinite: true,
+            focusOnSelect: true,
+            cssEase: 'linear',
+            touchMove: true,
 
+        });
+
+        var imgs = $('.slider img');
+        imgs.each(function () {
+            var item = $(this).closest('.item');
+            item.css({
+                // 'background-image': 'url(' + $(this).attr('src') + ')',
+                'background-position': 'center',
+                '-webkit-background-size': 'cover',
+                'background-size': 'cover',
+            });
+            $(this).hide();
+        });
+    </script>
+    <!-- slide benefit mobile -->
+    <script>
+        $('.one-time').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            adaptiveHeight: true
+        });
+    </script>
     <!-- custom -->
     <script src="/js/custom.js"></script>
 </body>
