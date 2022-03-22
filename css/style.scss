@@ -244,8 +244,8 @@ body .stuff {
         li {
           cursor: pointer;
           list-style-type: none;
-          transition: all 0.5s, opacity 0 linear 0.2s;
-          animation: fadeIn 2s;
+          animation-name: fadeIn;
+          animation-duration: 2s;
 
           img:nth-child(1) {
             display: block;
@@ -318,7 +318,7 @@ body .stuff {
         width: 100%;
         justify-content:center;
         position: relative;
-        min-height: 500px;
+        min-height: 550px;
         background: #ffffff;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 8px;
@@ -358,22 +358,29 @@ body .stuff {
         }
         ul {
           padding: 240px 0 20px 60px;
-          border li {
+          li {
             font-size: 15px;
             line-height: 24px;
             list-style-type: circle;
+            margin-bottom: 10px;
+            color:#4A6069;
           }
-          border-bottom: 1px dashed #2f4858;
-          border-width: 60%;
-          margin-bottom: 20px;
         }
-        button{
-          width: 215px;
-          height: 48px;
-          background: #3BB54A;
-          border-radius: 36px;
-          color: #fff;
-          border:none;
+        .footer-pack{
+          padding-top:40px;
+          border-top:dotted #BDBDBD;
+          position: absolute;
+          bottom:20px;
+          left:50%;
+          transform:translateX(-50%);
+          button{
+            width: 215px;
+            height: 48px;
+            background: #3BB54A;
+            border-radius: 36px;
+            color: #fff;
+            border:none;        
+        }   
         }
            
       }
@@ -395,37 +402,48 @@ body .stuff {
   }
 }
 @media (max-width: 1199px) {
+  .benefit-intro{
+    display:none;
+  }
   .feature-insite {
     display: none;
   }
-  .price-item-intro {
-    margin-top: 20px;
-    img {
-      width: 80%;
-      height: 80%;
+  .price-list-product {
+    .inner {
+      h2 {
+        font-size: 24px;    
+      }
     }
-    p {
-      padding: 0 20px;
-    }
-  }
-  .price-item {
-    .choose-hover {
-      h3 {
-        font-size: 28px;
-        padding-top: 40px;
-        font-weight: 700;
+    .price-item-intro {
+      margin-top: 20px;
+      img {
+        width: 80%;
+        height: 80%;
       }
       p {
-        font-weight: 400;
-        font-size: 15px;
-      }
-      h2 {
-        padding-top: 0px !important;
-        font-size: 24px;
+        padding: 0 20px;
       }
     }
-    margin: 40px 40px 0 40px;
+    .price-item {
+      .choose-hover {
+        h3 {
+          font-size: 28px;
+          padding-top: 40px;
+          font-weight: 700;
+        }
+        p {
+          font-weight: 400;
+          font-size: 15px;
+        }
+        h2 {
+          padding-top: 0px !important;
+          font-size: 24px;
+        }
+      }
+      margin: 40px 40px 0 40px;
+    }
   }
+ 
   .header-section .inner .menu .menu-cate {
     display: none;
   }
