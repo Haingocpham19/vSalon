@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500&display=swap" rel="stylesheet"
+        type="text/css">
+
+
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <!-- animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- header fixed -->
+    <header class="fixed">
+        <div class="header-section">
+            <div class="inner row">
+                <div class="col-lg-12 col-md-12 col-xs-12 d-flex menu">
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <img src="/images/logo.svg">
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-6 menu-cate">
+                        <div class="list-categories d-flex justity-content-around">
+                            <a href="#">Danh mục</a>
+                            <a href="#">Tính năng</a>
+                            <a href="#">Bảng giá</a>
+                            <a href="#">Ứng dụng Mobile</a>
+                            <a href="#">Phản hồi</a>
+                        </div>
+                        <div class="change-stuff d-flex justify-content-around">
+                            <div class="change-language">
+                                <div class="flag-item">
+                                    <img src="/images/2560px-Flag_of_Vietnam.svg.png" width="24px" height="17.14px">
+                                    vi
+                                </div>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <a href="#">vn</a>
+                                    <a href="#">vn</a>
+                                    <a href="#">vn</a>
+                                    <a href="#">vn</a>
+                                </div>
+                                <div class="dropbtn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="action-login-register ">
+                                <button>Đăng ký</button>
+                                <button>Đăng nhập</button>
+                            </div>
+                        </div>
+                        <label for="nav-mobile-input" class="nav__bars-btn" id="btn-bars">
+                            <img src="/images/bars-solid.svg">
+                        </label>
+                        <input type="checkbox" class="nav__input" id="nav-mobile-input">
+                        <label for="nav-mobile-input" class="nav__overlay">
+
+                        </label>
+                        <div class="nav__mobile">
+                            <div class="nav_mobile_header d-flex justify-content-around">
+                                <img src="../images/logo.svg">
+                                <label for="nav-mobile-input" class="pt-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                        class="bi bi-x" viewBox="0 0 16 16">
+                                        <path
+                                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </label>
+                            </div>
+                            <ul class="nav__mobile-list">
+                                <li>
+                                    <a href="" class="nav__mobile-link">Danh mục</a>
+                                </li>
+                                <li>
+                                    <a href="" class="nav__mobile-link">Tính năng</a>
+                                </li>
+                                <li>
+                                    <a href="" class="nav__mobile-link">Bảng giá</a>
+                                </li>
+                                <li>
+                                    <a href="" class="nav__mobile-link">Ứng dụng Moblie</a>
+                                </li>
+                                <li>
+                                    <a href="" class="nav__mobile-link">Phản hồi</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!-- slide -->
+    <div class="stuff">
+        <div class="introduction">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="inner" style="left:14%;top:20%;">
+                            <div class="text-intro">
+                                Giải pháp điện toán đám mây <span>quản lý Salon</span> hiệu quả nhất
+                                <button class="btn-trial-free">Dùng thử miễn phí
+                            </div>
+                        </div>
+                        <img class="d-block w-100" src="/images/slide-1.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <div class="inner" style="left:14%;top:20%;">
+                            <div class="text-intro">
+                                Tương tác thường xuyên với <span>Khách hàng</span> thân thiết
+                                <button class="btn-trial-free">Dùng thử miễn phí
+                            </div>
+                        </div>
+                        <img class="d-block w-100" src="/images/slide-2.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <div class="inner" style="left:14%;top:20%;">
+                            <div class="text-intro">
+                                Giải pháp điện toán đám mây <span>quản lý Salon</span> hiệu quả nhất
+                                <button class="btn-trial-free">Dùng thử miễn phí
+                            </div>
+                        </div>
+                        <img class="d-block w-100" src="/images/slide-3.jpg" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- loi ich khi su dung vSalon -->
+    <div class="benefit-intro">
+        <div class="animate__animated animate__bounce animate__fadeInUp">
+            <h2>Lợi ích khi sử dụng <span>vSalon</span></h2>
+            <h6>Hãy để chúng tôi đồng hành cùng thành công của bạn</h6>
+        </div>
+        <div class="wrap">
+            <div class="slider">
+                <div class="item">
+                    <div class="frame">
+                        <img class="icon-benefit" src="/images/icon-intro-1.png">
+                        <h3>Gắn kết khách hàng</h3>
+                        <p>Đem đến sự chuyên nghiệp và trải nghiệm dịch vụ tốt nhất cho khách.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="frame">
+                        <img class="icon-benefit" src="/images/icon-intro-2.png">
+                        <h3>Điều phối lịch hẹn</h3>
+                        <p>Giúp nhân viên tăng năng xuất làm việc. Quản lý hiệu quả từ xa.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="frame">
+                        <img class="icon-benefit" src="/images/icon-intro-3.png">
+                        <h3>Quản lý hiệu quả</h3>
+                        <p>Đem đến sự chuyên nghiệp và trải nghiệm dịch vụ tốt nhất cho khách.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="frame">
+                        <img class="icon-benefit" src="/images/icon-intro-1.png">
+                        <h3>Gắn kết khách hàng</h3>
+                        <p>Đem đến sự chuyên nghiệp và trải nghiệm dịch vụ tốt nhất cho khách.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="frame">
+                        <img class="icon-benefit" src="/images/icon-intro-2.png">
+                        <h3>Điều phối lịch hẹn</h3>
+                        <p>Giúp nhân viên tăng năng xuất làm việc. Quản lý hiệu quả từ xa.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="frame">
+                        <img class="icon-benefit" src="/images/icon-intro-3.png">
+                        <h3>Quản lý hiệu quả</h3>
+                        <p>Đem đến sự chuyên nghiệp và trải nghiệm dịch vụ tốt nhất cho khách.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="frame">
+                        <img class="icon-benefit" src="/images/icon-intro-1.png">
+                        <h3>Gắn kết khách hàng</h3>
+                        <p>Đem đến sự chuyên nghiệp và trải nghiệm dịch vụ tốt nhất cho khách.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="frame">
+                        <img class="icon-benefit" src="/images/icon-intro-2.png">
+                        <h3>Điều phối lịch hẹn</h3>
+                        <p>Giúp nhân viên tăng năng xuất làm việc. Quản lý hiệu quả từ xa.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="frame">
+                        <img class="icon-benefit" src="/images/icon-intro-3.png">
+                        <h3>Quản lý hiệu quả</h3>
+                        <p>Đem đến sự chuyên nghiệp và trải nghiệm dịch vụ tốt nhất cho khách.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- loi ich khi su dung vSalon mobile -->
+    <div class="inner benefit-intro-mobile">
+        <div class="one-time">
+            <div class="item">
+                <div class="frame">
+                    <img class="icon-benefit" src="/images/icon-intro-1.png">
+                    <h3>Gắn kết khách hàng</h3>
+                    <p>Đem đến sự chuyên nghiệp và trải nghiệm dịch vụ tốt nhất cho khách.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="frame">
+                    <img class="icon-benefit" src="/images/icon-intro-2.png">
+                    <h3>Điều phối lịch hẹn</h3>
+                    <p>Giúp nhân viên tăng năng xuất làm việc. Quản lý hiệu quả từ xa.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="frame">
+                    <img class="icon-benefit" src="/images/icon-intro-3.png">
+                    <h3>Quản lý hiệu quả</h3>
+                    <p>Đem đến sự chuyên nghiệp và trải nghiệm dịch vụ tốt nhất cho khách.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- gioi thieu tinh nang cua ung dung -->
+    <div class="feature-insite">
+        <div class="inner">
+            <div class="feature-header">
+                <ul class="d-flex justify-content-around">
+                    <li>
+                        <img src="/images/icon-1-feature.png">
+                        <img src="/images/icon-1-feature-active.png">
+                        <p>Quản lý chuỗi salon</p>
+                        <hr>
+                    </li>
+                    <li>
+                        <img src="/images/icon-2-feature.png">
+                        <img src="/images/icon-2-feature-active.png">
+                        <p>Quản lý lịch hẹn</p>
+                        <hr>
+                    </li>
+                    <li>
+                        <img src="/images/icon-3-feature.png">
+                        <img src="/images/icon-3-feature-active.png">
+                        <p>Quản lý thành viên</p>
+                        <hr>
+                    </li>
+                    <li>
+                        <img src="/images/icon-4-feature.png">
+                        <img src="/images/icon-4-feature-active.png">
+                        <p>Bán hàng</p>
+                        <hr>
+                    </li>
+                    <li>
+                        <img src="/images/icon-5-feature.png">
+                        <img src="/images/icon-5-feature-active.png">
+                        <p>Quản lý kho</p>
+                        <hr>
+                    </li>
+                    <li>
+                        <img src="/images/icon-6-feature.png">
+                        <img src="/images/icon-5-feature-active.png">
+                        <p>Quản lý thành viên</p>
+                        <hr>
+                    </li>
+                    <li>
+                        <img src="/images/icon-7-feature.png">
+                        <img src="/images/icon-5-feature-active.png">
+                        <p>Bảng thống kê</p>
+                        <hr>
+                    </li>
+                </ul>
+            </div>
+            <div class="feature-content">
+                <div class="content animate__animated animate__bounce animate__fadeInUp">
+                    <div class="row">
+                        <div class="col-md-6 img-content">
+                            <img src="/images/feature-content-1.png" alt="">
+                        </div>
+                        <div class="col-md-6 main-content">
+                            <h3>Tổng hợp dữ liệu nhanh chóng, chính xác</h3>
+                            Báo cáo thông tin lịch hẹn, doanh thu… chi tiết đến từng salon trong chuỗi. Báo cáo tổng hợp
+                            cho số liệu tổng quan tình hình kinh doanh của toàn bộ salon. Dễ dàng so sánh, đánh giá hiệu
+                            quản hoạt động của từng của hàng.
+                        </div>
+                        <hr class="line-hr">
+                    </div>
+                </div>
+                <div class="content animate__animated animate__bounce animate__fadeInLeft">
+                    <div class="row">
+                        <div class="col-md-6 img-content">
+                            <img src="/images/feature-content-2.png" alt="">
+                        </div>
+                        <div class="col-md-6 main-content">
+                            <h3>Quản lý lịch hẹn</h3>
+                            Quản lý lịch hẹn giúp cho salon sắp xếp công việc hiệu quả. Tăng năng suất làm việc của nhân
+                            viên, tăng trải nghiệm khách hàng.
+                        </div>
+                    </div>
+                </div>
+                <div class="content animate__animated animate__bounce animate__fadeInRightBig">
+                    <div class="row">
+                        <div class="col-md-6 img-content">
+                            <img src="/images/feature-content-3.png" alt="">
+                        </div>
+                        <div class="col-md-6 main-content">
+                            <h3>Duy trì giữ chân khách hàng
+                            </h3>
+                            Với thẻ thành viên, salon sẽ nhận diện được khách hàng thân thiết, từ đó phục vụ khách hàng
+                            tốt hơn để giữ chân khách hàng
+                        </div>
+                    </div>
+                </div>
+                <div class="content animate__animated animate__bounce animate__fadeInDown">
+                    <div class="row">
+                        <div class="col-md-6 img-content">
+                            <img src="/images/feature-content-4.png" alt="">
+                        </div>
+                        <div class="col-md-6 main-content">
+                            <h3>Tạo khuyến mại nhanh chóng
+                            </h3>
+                            Chỉ mất vài phút, bạn đã có thể TẠO VÀ ÁP DỤNG KHUYẾN MẠI cho từng mặt hàng hay nhóm hàng,
+                            giá trị khuyến mại linh hoạt theo đơn vị tính (chiếc, bộ; gói…); số tiền cụ thể (vnđ) hoặc %
+                            (giá trị đơn hàng, giá trị hàng tặng, điểm tích lũy…). Tất cả các thông tin về hàng khuyến
+                            mại và giá trị khuyến mại đều được thể hiện rõ ràng trên hóa đơn (trừ điểm tích lũy), giúp
+                            người bán hàng và cả khách hàng có thể dễ ràng tra soát. Không chỉ vậy, khi phát sinh giao
+                            dịch Trả hàng thì giá trị khuyến mại đã được áp dụng cho khách cũng sẽ được thể hiện trên
+                            hóa đơn Trả hàng, giúp bạn hay nhân viên không bị nhầm lẫn khi hoàn tiền cho khách.
+                        </div>
+                    </div>
+                </div>
+                <div class="content animate__animated animate__bounce animate__fadeInUp">
+                    <div class="row">
+                        <div class="col-md-6 img-content">
+                            <img src="/images/feature-content-5.png" alt="">
+                        </div>
+                        <div class="col-md-6 main-content">
+                            <h3>Nắm bắt hàng tồn kho, bổ sung hàng hóa kịp thời
+                            </h3>
+                            vSalon giúp bạn quản lý tồn kho chính xác tới từng mặt hàng cụ thể và chi tiết trong từng
+                            chi nhánh, gạt đi nỗi lo muôn thuở về những sản phẩm chồng chất mà không soát nổi con số như
+                            tình trạng các cửa hàng hay gặp phải. Theo đó, bạn sẽ chủ động nắm được mặt hàng nào đang
+                            bán chạy, số lượng hàng còn tồn trong kho để đưa ra quyết định nhập hàng lần kế tiếp.
+                        </div>
+                    </div>
+                </div>
+                <div class="content animate__animated animate__bounce animate__fadeInTopRight">
+                    <div class="row">
+                        <div class="col-md-6 img-content">
+                            <img src="/images/feature-content-1.png" alt="">
+                        </div>
+                        <div class="col-md-6 main-content">
+                            <h3>Tổng hợp dữ liệu nhanh chóng, chính xác</h3>
+                            Báo cáo thông tin lịch hẹn, doanh thu… chi tiết đến từng salon trong chuỗi. Báo cáo tổng hợp
+                            cho số liệu tổng quan tình hình kinh doanh của toàn bộ salon. Dễ dàng so sánh, đánh giá hiệu
+                            quản hoạt động của từng của hàng.
+                        </div>
+                    </div>
+                </div>
+                <div class="content animate__animated animate__bounce animate__fadeInTopRight">
+                    <div class="row">
+                        <div class="col-md-6 img-content">
+                            <img src="/images/feature-content-1.png" alt="">
+                        </div>
+                        <div class="col-md-6 main-content">
+                            <h3>Tổng hợp dữ liệu nhanh chóng, chính xác</h3>
+                            Báo cáo thông tin lịch hẹn, doanh thu… chi tiết đến từng salon trong chuỗi. Báo cáo tổng hợp
+                            cho số liệu tổng quan tình hình kinh doanh của toàn bộ salon. Dễ dàng so sánh, đánh giá hiệu
+                            quản hoạt động của từng của hàng.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bang gia -->
+    <div class="price-list-product">
+        <div class="inner">
+            <h2>Bảng giá phần mềm quản lý <span>Sapa, salon vSalon</span></h2>
+            <h6>Hãy lựa chọn gói giải pháp phù hợp với nhu cầu của bạn và dùng thử miễn phí 30 ngày</h6>
+            <div class="price-list-items row">
+                <div class="col-lg-4 col-md-4 col-sm-12 price-item">
+                    <div class="choose-hover">
+                        <h3>GÓI CƠ BẢN</h3>
+                        <p>Dành cho cửa hàng nhỏ , mới bắt đầu kinh doanh</p>
+                    </div>
+                    <h2>139.000 vnd</h2>
+                    <ul>
+                        <li>
+                            <span><img src="/images/check-xanh.svg" alt=""></span>
+                            1 cửa hàng hàng tháng
+                        </li>
+                        <li>
+                            <span><img src="/images/check-xanh.svg" alt=""></span>
+                            Không giới hạn người dùng
+                        </li>
+                        <li>
+                            <span><img src="/images/check-xanh.svg" alt=""></span>
+                            Không giới hạn tính năng
+                        </li>
+                        <li>
+                            <span><img src="/images/check-xanh.svg" alt=""></span>
+                            Không phí khởi tạo
+                        </li>
+                    </ul>
+                    <div class="footer-pack">
+                        <button>Dùng thử ngay</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 price-item-intro">
+                    <img src="/images/image-intro-price-list.png">
+                    <p>Lưu ý :<span> Gói cơ bản</span> chỉ áp dụng cho 1 cửa hàng, để mua thêm cửa hàng mời quý
+                        khách nâng cấp
+                        lên gói <span>nâng cao</span>.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 price-item">
+                    <div class="choose-hover">
+                        <h3 class="advanced-pack">GÓI NÂNG CAO</h3>
+                        <p>Dành cho mô hình kinh doanh chuỗi</p>
+                    </div>
+                    <h2>289.000 vnd</h2>
+                    <ul>
+                        <li>
+                            <span><img src="/images/check-vang.svg" alt=""></span>
+                            1 cửa hàng hàng tháng
+                        </li>
+                        <li>
+                            <span><img src="/images/check-vang.svg" alt=""></span>
+                            Không giới hạn người dùng
+                        </li>
+                        <li>
+                            <span><img src="/images/check-vang.svg" alt=""></span>
+                            Thêm chi nhánh 99.000 đ/tháng
+                        </li>
+                        <li>
+                            <span><img src="/images/check-vang.svg" alt=""></span>
+                            Không giới hạn tính năng
+                        </li>
+                        <li>
+                            <span><img src="/images/check-vang.svg" alt=""></span>
+                            Không phí khởi tạo
+                        </li>
+                    </ul>
+                    <div class="footer-pack">
+                        <button>Dùng thử ngay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="background-body">
+            <h3>
+                Hãy dùng thử miễn phí phần mềm trước, vSalon sẽ tư vấn cho bạn gói dịch vụ phù hợp sau nhé!
+            </h3>
+            <div class="btn-adv">
+                <button>Dùng thử ngay</button>
+            </div>
+        </div>
+    </div>
+    <div class="adv-app">
+        <div class="inner">
+            <div class="d-flex">
+                <div class="col-md-6 col-sm-12 left-adv-app">
+                    <h2>Ứng dụng quản lý salon miễn phí<span> trên điện thoại</span></h2>
+                    <p>Quản lý thuận tiện, cập nhật kịp thời với ứng dụng dành cho mobile và tablet.</p>
+                    <div class="btn-appstore">
+                        <img src="/images/appstore.png" alt="">
+                        <img src="/images/googleplay.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- phan hoi khach hang ve vSalon -->
+    <div class="response-customer">
+        <div class="inner">
+            <div class="res-ctm-header">
+                <h3>Lắng nghe cảm nhận của khách hàng về <span>vSalon</span></h3>
+                <p>Sự hài lòng của khách hàng chính là thành công lớn nhất của chúng tôi</p>
+            </div>
+            <div class="slider-response">
+                <div class="response-item">
+                    <div class="info-customer">
+                        <img src="/images/client-160x160 1.png" alt="img-user">
+                        <h3>CHỊ HUẾ</h3>
+                        <h5>Marketing Ritta Hair Salon</h5>
+                        <div class="border-bt"></div>
+                    </div>
+                    <div class="quotes-customer">
+                        <img src="/images/quotes-icon.png" alt="">
+                        <div class="qoutes-content">
+                            Phần mềm e-spa hỗ trợ rất tốt trong các chiến dịch Marketing của chúng tôi đến với khách
+                            hàng, nhất là các dịp lễ trong năm, không còn phải tốn nhiều chi phí maketing đắt đỏ, nhưng
+                            thông điệp của chúng tôi vẫn truyền tải được đến với đối tượng khách hàng.
+                        </div>
+                    </div>
+                </div>
+                <div class="response-item">
+                    <div class="info-customer">
+                        <img src="/images/client-160x160 2.png" alt="img-user">
+                        <h3>BÀ HELEN TRẦN</h3>
+                        <h5>Giám đốc Eden Beauty</h5>
+                        <div class="border-bt"></div>
+                    </div>
+                    <div class="quotes-customer">
+                        <img src="/images/quotes-icon.png" alt="">
+                        <div class="qoutes-content">
+                            Phần mềm e-spa hỗ trợ rất tốt trong các chiến dịch Marketing của chúng tôi đến với khách
+                            hàng, nhất là các dịp lễ trong năm, không còn phải tốn nhiều chi phí maketing đắt đỏ, nhưng
+                            thông điệp của chúng tôi vẫn truyền tải được đến với đối tượng khách hàng.
+                        </div>
+                    </div>
+                </div>
+                <div class="response-item">
+                    <div class="info-customer">
+                        <img src="/images/client-160x160 3.png" alt="img-user">
+                        <h3>ANH NGỌC ANH</h3>
+                        <h5>Giám đốc chuỗi Spa Lagertroemie</h5>
+                        <div class="border-bt"></div>
+                    </div>
+                    <div class="quotes-customer">
+                        <img src="/images/quotes-icon.png" alt="">
+                        <div class="qoutes-content">
+                            Phần mềm e-spa hỗ trợ rất tốt trong các chiến dịch Marketing của chúng tôi đến với khách
+                            hàng, nhất là các dịp lễ trong năm, không còn phải tốn nhiều chi phí maketing đắt đỏ, nhưng
+                            thông điệp của chúng tôi vẫn truyền tải được đến với đối tượng khách hàng.
+                        </div>
+                    </div>
+                </div>
+                <div class="response-item">
+                    <div class="info-customer">
+                        <img src="/images/client-160x160 1.png" alt="img-user">
+                        <h3>CHỊ HUẾ</h3>
+                        <h5>Marketing Ritta Hair Salon</h5>
+                        <div class="border-bt"></div>
+                    </div>
+                    <div class="quotes-customer">
+                        <img src="/images/quotes-icon.png" alt="">
+                        <div class="qoutes-content">
+                            Phần mềm e-spa hỗ trợ rất tốt trong các chiến dịch Marketing của chúng tôi đến với khách
+                            hàng, nhất là các dịp lễ trong năm, không còn phải tốn nhiều chi phí maketing đắt đỏ, nhưng
+                            thông điệp của chúng tôi vẫn truyền tải được đến với đối tượng khách hàng.
+                        </div>
+                    </div>
+                </div>
+                <div class="response-item">
+                    <div class="info-customer">
+                        <img src="/images/client-160x160 2.png" alt="img-user">
+                        <h3>BÀ HELEN TRẦN</h3>
+                        <h5>Giám đốc Eden Beauty</h5>
+                        <div class="border-bt"></div>
+                    </div>
+                    <div class="quotes-customer">
+                        <img src="/images/quotes-icon.png" alt="">
+                        <div class="qoutes-content">
+                            Phần mềm e-spa hỗ trợ rất tốt trong các chiến dịch Marketing của chúng tôi đến với khách
+                            hàng, nhất là các dịp lễ trong năm, không còn phải tốn nhiều chi phí maketing đắt đỏ, nhưng
+                            thông điệp của chúng tôi vẫn truyền tải được đến với đối tượng khách hàng.
+                        </div>
+                    </div>
+                </div>
+                <div class="response-item">
+                    <div class="info-customer">
+                        <img src="/images/client-160x160 3.png" alt="img-user">
+                        <h3>ANH NGỌC ANH</h3>
+                        <h5>Giám đốc chuỗi Spa Lagertroemie</h5>
+                        <div class="border-bt"></div>
+                    </div>
+                    <div class="quotes-customer">
+                        <img src="/images/quotes-icon.png" alt="">
+                        <div class="qoutes-content">
+                            Phần mềm e-spa hỗ trợ rất tốt trong các chiến dịch Marketing của chúng tôi đến với khách
+                            hàng, nhất là các dịp lễ trong năm, không còn phải tốn nhiều chi phí maketing đắt đỏ, nhưng
+                            thông điệp của chúng tôi vẫn truyền tải được đến với đối tượng khách hàng.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="adv-cal">
+        <div class="inner">
+            <img src="/images//5000plus.png">
+            <h2>Khách hàng đã sử dụng vSalon Sự hài lòng của khách hàng chính là thành công lớn nhất của chúng tôi</h2>
+        </div>       
+    </div>
+    <!-- dang ky dung thu -->
+    <div class="box-signup-trial">
+        <div class="inner">
+            <h2>Hơn <span>5000</span> doanh nghiệp, chủ shop đang quản lý như thế nào?</h2>
+            <p>Đăng ký dùng thử miễn phí 30 ngày để khám phá</p>
+            <div class="form-register">
+                <form>
+                    <div class="input-box">
+                        <img src="/images/vector-email.png" alt="">
+                        <input type="text">
+                        <button>Đăng ký ngay</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="logo-footer">
+            <div class="inner">
+                <img src="/images/logo-footer.png" alt="">
+            </div>
+        </div>
+        <div class="content-footer">
+            <div class="inner">
+                <div class="col-md-8 col-sm-12 left-ft">
+                    <div class="col-md-8 col-sm-6">
+                        <h3>Giới thiệu</h3>
+                        <p>e-Spa là hệ thống phần mềm quản lý spa, salon… hoàn toàn đáp ứng nhu cầu quản trị và chăm sóc
+                            khách
+                            hàng của các spa, salon tóc, thẩm mỹ viện...</p>
+                        <div class="social-redirect">
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <h3>Liên kết</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Điều khoản bảo mật</a>
+                            </li>
+                            <li>
+                                <a href="#">Điều khoản bảo mật</a>
+                            </li>
+                            <li>
+                                <a href="#">Điều khoản bảo mật</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 right-ft">
+                    <h3>Liên hệ</h3>
+                    <ul>
+                        <li>
+                            Công ty TNHH Orenda
+                        </li>
+                        <li>
+                            GPKD: 0108149044 – cấp ngày 29/01/2018
+                        </li>
+                        <li>
+                            <span><img src="/images/icon-position.png" alt=""></span>
+                            Tầng 4, Số 84 Tô Vĩnh Diện, Phường Khương Trung, Quận Thanh Xuân, TP Hà Nội
+                        </li>
+                        <li>
+                            <span><img src="/images/icon-phone.png" alt=""></span>
+                            0865.500.968
+                        </li>
+                        <li>
+                            <span><img src="/images/icon-email.png" alt=""></span>
+                            Support@vSalon.vn
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>    
+    </footer>
+    <div class="coppy-right text-center">
+        Copyright © 2021 <span>vSalon</span> . All rights reserved.
+    </div>
+    <!-- slicker -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- slide benefit pc -->
+    <script>
+        $('.slider').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: false,
+            dots: false,
+            centerMode: true,
+            variableWidth: true,
+            infinite: true,
+            focusOnSelect: true,
+            cssEase: 'linear',
+            touchMove: true,
+
+        });
+
+        var imgs = $('.slider img');
+        imgs.each(function () {
+            var item = $(this).closest('.item');
+            item.css({
+                // 'background-image': 'url(' + $(this).attr('src') + ')',
+                'background-position': 'center',
+                '-webkit-background-size': 'cover',
+                'background-size': 'cover',
+            });
+            $(this).hide();
+        });
+
+
+        //slide benefit mobile
+        $('.one-time').slick({
+            arrows: false,
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            adaptiveHeight: true
+        });
+        //slide response customer 
+        $('.slider-response').slick({
+            arrows: false,
+            dots: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    </script>
+    <!-- custom -->
+    <script src="/js/custom.js"></script>
+</body>
+
+</html>
