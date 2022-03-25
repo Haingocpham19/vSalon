@@ -37,18 +37,18 @@
         <div class="header-section">
             <div class="inner d-flex">
                 <div class="col-lg-12 col-md-12 col-xs-12 d-flex menu">
-                    <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="logo col-lg-2 col-md-2 col-sm-6">
                         <img src="/images/logo.svg">
                     </div>
-                    <div class="col-lg-9 col-md-9 col-sm-6 menu-cate">
-                        <div class="list-categories d-flex justity-content-around">
+                    <div class="col-lg-10 col-md-10 col-sm-6 menu-cate">
+                        <div class="list-categories d-flex justity-content-center">
                             <a href="#">Danh mục</a>
                             <a href="#">Tính năng</a>
                             <a href="#">Bảng giá</a>
                             <a href="#">Ứng dụng Mobile</a>
                             <a href="#">Phản hồi</a>
                         </div>
-                        <div class="change-stuff d-flex justify-content-around">
+                        <div class="change-stuff d-flex justify-content-between">
                             <div class="change-language">
                                 <div class="flag-item">
                                     <img src="/images/2560px-Flag_of_Vietnam.svg.png" width="24px" height="17.14px">
@@ -121,7 +121,7 @@
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="inner" style="left:14%;top:20%;">
+                        <div class="inner">
                             <div class="text-intro">
                                 Giải pháp điện toán đám mây <span>quản lý Salon</span> hiệu quả nhất
                                 <button class="btn-trial-free">Dùng thử miễn phí
@@ -130,7 +130,7 @@
                         <img class="d-block w-100" src="/images/slide-1.jpg" alt="First slide">
                     </div>
                     <div class="carousel-item">
-                        <div class="inner" style="left:14%;top:20%;">
+                        <div class="inner">
                             <div class="text-intro">
                                 Tương tác thường xuyên với <span>Khách hàng</span> thân thiết
                                 <button class="btn-trial-free">Dùng thử miễn phí
@@ -139,7 +139,7 @@
                         <img class="d-block w-100" src="/images/slide-2.jpg" alt="Second slide">
                     </div>
                     <div class="carousel-item">
-                        <div class="inner" style="left:14%;top:20%;">
+                        <div class="inner">
                             <div class="text-intro">
                                 Giải pháp điện toán đám mây <span>quản lý Salon</span> hiệu quả nhất
                                 <button class="btn-trial-free">Dùng thử miễn phí
@@ -1023,12 +1023,12 @@
         Copyright © 2021 <span>vSalon</span> . All rights reserved.
     </div>
     
-    <div id="ex-footer">
+    <!-- <div id="ex-footer">
         <div id="back-to-top">
             <img src="/images/back to top.png">
         </div>
         <img class="messenger" src="/images/messager.svg">
-    </div>
+    </div> -->
 
     <!-- slicker -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -1084,7 +1084,7 @@
 
         //slide benefit mobile
         $('.one-time').slick({
-            dots: true,
+            dots: false,
             infinite: false,
             speed: 300,
             slidesToShow: 1,
