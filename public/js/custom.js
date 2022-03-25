@@ -37,7 +37,7 @@ $(document).ready(function(){
 
 
 //click ontop
-var mybutton = document.getElementById("ontop");
+var mybutton = document.getElementById("back-to-top");
 window.onscroll = function() {
   scrollFunction()
 };
@@ -50,7 +50,7 @@ function scrollFunction() {
   }
 }
 // Bind your button click, scroll direction and effect speed
-document.getElementById("ontop").onclick = function() {
+document.getElementById("back-to-top").onclick = function() {
   scrollTo(0, 8000); // it will take 8 seconds to reach to top.
 
 }
@@ -91,3 +91,38 @@ function easeOutCuaic(t) {
   t--;
   return t * t * t + 1;
 }
+
+
+
+// let lastKnownScrollPosition = 0;
+// let ticking = false;
+
+// function doSomething(scrollPos) {
+//   const countAnimate = document.querySelectorAll('#animateX').length;
+//     for (let i = 0; i < countAnimate; i++) {
+//       document.querySelectorAll('#animateX')[i].classList.add('animate__animated', 'animate__bounceOutLeft' , "animate__fadeInUp");
+//     }
+
+//   // element.addEventListener('animationend', () => {
+//   //   // do something
+//   // });
+// }
+
+// document.addEventListener('scroll', function(e) {
+//   lastKnownScrollPosition = window.scrollY;
+
+//   if (!ticking) {
+//     window.requestAnimationFrame(function() {
+//       doSomething(lastKnownScrollPosition);
+//       ticking = false;
+//     });
+
+//     ticking = true;
+
+//     const countAnimate = document.querySelectorAll('#animateX').length;
+//     for (let i = 0; i < countAnimate; i++) {
+//       document.querySelectorAll('#animateX')[i].classList.remove('animate__fadeInUp');
+//     }
+//   }
+
+// });

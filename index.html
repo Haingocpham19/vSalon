@@ -24,6 +24,8 @@
 
     <!-- animation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
     <link rel="stylesheet" href="../css/style.css">
     <title>vSalon Demo</title>
@@ -33,7 +35,7 @@
     <!-- header fixed -->
     <header class="fixed">
         <div class="header-section">
-            <div class="inner row">
+            <div class="inner d-flex">
                 <div class="col-lg-12 col-md-12 col-xs-12 d-flex menu">
                     <div class="col-lg-3 col-md-3 col-sm-6">
                         <img src="/images/logo.svg">
@@ -204,7 +206,7 @@
     </div>
     <!-- loi ich khi su dung vSalon -->
     <div class="benefit-intro">
-        <div class="animate__animated animate__bounce animate__fadeInUp">
+        <div data-aos="fade-up" class="animate__animated animate__bounce animate__fadeInUp">
             <h2>Lợi ích khi sử dụng <span>vSalon</span></h2>
             <h6>Hãy để chúng tôi đồng hành cùng thành công của bạn</h6>
         </div>
@@ -288,7 +290,7 @@
     </div>
     <!-- loi ich khi su dung vSalon mobile -->
     <div class="inner benefit-intro-mobile">
-        <div class="animate__animated animate__bounce animate__fadeInUp">
+        <div data-aos="fade-up">
             <h2>Lợi ích khi sử dụng <span>vSalon</span></h2>
             <h6>Hãy để chúng tôi đồng hành cùng thành công của bạn</h6>
         </div>
@@ -324,7 +326,7 @@
         <img src="/images/service-bg.png" class="border-cong">
         <div class="inner">
             <div class="feature-header">
-                <ul class="d-flex justify-content-around">
+                <ul class="d-flex justify-content-around for-pc">
                         <li>
                             <img src="/images/icon-1-feature.png">
                             <img src="/images/icon-1-feature-active.png">
@@ -368,26 +370,54 @@
                             <hr>
                         </li>
                 </ul>
-                <!-- <ul class="d-flex justify-content-around">
-                    <li>
-                        <img src="/images/icon-5-feature.png">
-                        <img src="/images/icon-5-feature-active.png">
-                        <p>Quản lý kho</p>
-                        <hr>
-                    </li>
-                    <li>
-                        <img src="/images/icon-6-feature.png">
-                        <img src="/images/icon-6-feature-active.png">
-                        <p>Quản lý thành viên</p>
-                        <hr>
-                    </li>
-                    <li>
-                        <img src="/images/icon-7-feature.png">
-                        <img src="/images/icon-7-feature-active.png">
-                        <p>Bảng thống kê</p>
-                        <hr>
-                    </li>
-                </ul> -->
+                <div class="for-tablet d-none">
+                    <ul class="d-flex justify-content-around">
+                        <li>
+                            <img src="/images/icon-1-feature.png">
+                            <img src="/images/icon-1-feature-active.png">
+                            <p>Quản lý chuỗi salon</p>
+                            <hr>
+                        </li>
+                        <li>
+                            <img src="/images/icon-2-feature.png">
+                            <img src="/images/icon-2-feature-active.png">
+                            <p>Quản lý lịch hẹn</p>
+                            <hr>
+                        </li>
+                        <li>
+                            <img src="/images/icon-3-feature.png">
+                            <img src="/images/icon-3-feature-active.png">
+                            <p>Quản lý thành viên</p>
+                            <hr>
+                        </li>
+                        <li>
+                            <img src="/images/icon-4-feature.png">
+                            <img src="/images/icon-4-feature-active.png">
+                            <p>Bán hàng</p>
+                            <hr>
+                        </li>
+                    </ul>
+                    <ul class="d-flex justify-content-around">
+                        <li>
+                            <img src="/images/icon-5-feature.png">
+                            <img src="/images/icon-5-feature-active.png">
+                            <p>Quản lý kho</p>
+                            <hr>
+                        </li>
+                        <li>
+                            <img src="/images/icon-6-feature.png">
+                            <img src="/images/icon-6-feature-active.png">
+                            <p>Quản lý thành viên</p>
+                            <hr>
+                        </li>
+                        <li>
+                            <img src="/images/icon-7-feature.png">
+                            <img src="/images/icon-7-feature-active.png">
+                            <p>Bảng thống kê</p>
+                            <hr>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="feature-content">
                 <div class="content animate__animated animate__bounce animate__fadeInUp">
@@ -465,7 +495,7 @@
                 <div class="content animate__animated animate__bounce animate__fadeInUp">
                     <div class="row">
                         <div class="col-md-6 img-content">
-                            <img src="/images/feature-content-1.png" alt="">
+                            <img src="/images/feature-content-6.png" alt="">
                         </div>
                         <div class="col-md-6 main-content">
                             <h3>Tổng hợp dữ liệu nhanh chóng, chính xác</h3>
@@ -478,7 +508,7 @@
                 <div class="content animate__animated animate__bounce animate__fadeInUp">
                     <div class="row">
                         <div class="col-md-6 img-content">
-                            <img src="/images/feature-content-1.png" alt="">
+                            <img src="/images/feature-content-7.png" alt="">
                         </div>
                         <div class="col-md-6 main-content">
                             <h3>Tổng hợp dữ liệu nhanh chóng, chính xác</h3>
@@ -700,10 +730,12 @@
     <!-- bang gia -->
     <div class="price-list-product">
         <div class="inner">
-            <h2>Bảng giá phần mềm quản lý <span>Sapa, salon vSalon</span></h2>
-            <h6>Hãy lựa chọn gói giải pháp phù hợp với nhu cầu của bạn và dùng thử miễn phí 30 ngày</h6>
+            <div data-aos="fade-up">
+                <h2>Bảng giá phần mềm quản lý <span>Spa, salon vSalon</span></h2>
+                <h6>Hãy lựa chọn gói giải pháp phù hợp với nhu cầu của bạn và dùng thử miễn phí 30 ngày</h6>
+            </div>
             <div class="price-list-items row">
-                <div class="col-lg-4 col-md-4 col-sm-12 price-item">
+                <div data-aos="fade-right" class=" col-lg-4 col-md-4 col-sm-12 price-item">
                     <div class="pack">
                         <div class="choose-hover">
                             <h3>GÓI CƠ BẢN</h3>
@@ -733,16 +765,16 @@
                         </div>
                     </div>    
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 price-item-intro">
+                <div data-aos="fade-up" class="col-lg-4 col-md-4 col-sm-12 price-item-intro">
                     <img src="/images/image-intro-price-list.png">
                     <p>Lưu ý :<span> Gói cơ bản</span> chỉ áp dụng cho 1 cửa hàng, để mua thêm cửa hàng mời quý
                         khách nâng cấp
                         lên gói <span>nâng cao</span>.
                     </p>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 price-item">
+                <div data-aos="fade-left" class="col-lg-4 col-md-4 col-sm-12 price-item ">
                    <div class="pack">
-                    <div class="choose-hover">
+                    <div class="choose-hover adv">
                         <h3 class="advanced-pack">GÓI NÂNG CAO</h3>
                         <p>Dành cho mô hình kinh doanh chuỗi</p>
                     </div>
@@ -777,7 +809,7 @@
             </div>
         </div>
         <div class="background-body">
-            <h3>
+            <h3 data-aos="fade-up">
                 Hãy dùng thử miễn phí phần mềm trước, vSalon sẽ tư vấn cho bạn gói dịch vụ phù hợp sau nhé!
             </h3>
             <div class="btn-adv">
@@ -788,10 +820,10 @@
     <div class="adv-app">
         <div class="inner">
             <div class="d-flex">
-                <div class="col-md-6 col-sm-12 left-adv-app">
-                    <h2>Ứng dụng quản lý salon miễn phí<span> trên điện thoại</span></h2>
-                    <p>Quản lý thuận tiện, cập nhật kịp thời với ứng dụng dành cho mobile và tablet.</p>
-                    <div class="btn-appstore">
+                <div class="left-adv-app">
+                    <h2 data-aos="fade-up">Ứng dụng quản lý salon miễn phí<span> trên điện thoại</span></h2>
+                    <p data-aos="fade-up">Quản lý thuận tiện, cập nhật kịp thời với ứng dụng dành cho mobile và tablet.</p>
+                    <div data-aos="fade-up" class="btn-appstore">
                         <img src="/images/appstore.png" alt="">
                         <img src="/images/googleplay.png">
                     </div>
@@ -802,7 +834,7 @@
     <!-- phan hoi khach hang ve vSalon -->
     <div class="response-customer">
         <div class="inner">
-            <div class="res-ctm-header">
+            <div data-aos="fade-up" class="res-ctm-header">
                 <h3>Lắng nghe cảm nhận của khách hàng về <span>vSalon</span></h3>
                 <p>Sự hài lòng của khách hàng chính là thành công lớn nhất của chúng tôi</p>
             </div>
@@ -907,7 +939,7 @@
         </div>
     </div>
     <div class="adv-cal">
-        <div class="inner">
+        <div data-aos="fade-up" class="inner">
             <img src="/images//5000plus.png">
             <h2>Khách hàng đã sử dụng vSalon Sự hài lòng của khách hàng chính là thành công lớn nhất của chúng tôi</h2>
         </div>
@@ -915,7 +947,7 @@
     <!-- dang ky dung thu -->
     <div class="box-signup-trial">
         <div class="inner">
-            <h2>Hơn <span>5000</span> doanh nghiệp, chủ shop đang quản lý như thế nào?</h2>
+            <h2 data-aos="fade-up">Hơn <span>5000</span> doanh nghiệp, chủ shop đang quản lý như thế nào?</h2>
             <p>Đăng ký dùng thử miễn phí 30 ngày để khám phá</p>
             <div class="form-register">
                 <form>
@@ -937,7 +969,7 @@
         <div class="content-footer">
             <div class="inner">
                 <div class="col-md-8 col-sm-12 left-ft">
-                    <div class="col-md-8 col-sm-6">
+                    <div data-aos="fade-up" class="col-md-8 col-sm-6">
                         <h3>Giới thiệu</h3>
                         <p>e-Spa là hệ thống phần mềm quản lý spa, salon… hoàn toàn đáp ứng nhu cầu quản trị và chăm sóc
                             khách
@@ -946,7 +978,7 @@
 
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6">
+                    <div data-aos="fade-up" class="col-md-4 col-sm-6">
                         <h3>Liên kết</h3>
                         <ul>
                             <li>
@@ -961,7 +993,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-12 right-ft">
+                <div data-aos="fade-up" class="col-md-4 col-sm-12 right-ft">
                     <h3>Liên hệ</h3>
                     <ul>
                         <li>
@@ -986,11 +1018,18 @@
                 </div>
             </div>
         </div>
-        <img id="ontop" src="/images/back to top.png">
     </footer>
     <div class="coppy-right text-center">
         Copyright © 2021 <span>vSalon</span> . All rights reserved.
     </div>
+    
+    <div id="ex-footer">
+        <div id="back-to-top">
+            <img src="/images/back to top.png">
+        </div>
+        <img class="messenger" src="/images/messager.svg">
+    </div>
+
     <!-- slicker -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -1000,7 +1039,7 @@
         $('.slider').slick({
             slidesToShow: 3,
             slidesToScroll: 1,
-            arrows: false,
+            arrows: true,
             dots: false,
             centerMode: true,
             variableWidth: true,
@@ -1012,6 +1051,7 @@
                 {
                     breakpoint: 1200,
                     settings: {
+                        arrows: false,
                         slidesToShow: 2,
                         slidesToScroll: 2
                     }
@@ -1019,6 +1059,7 @@
                 {
                     breakpoint: 600,
                     settings: {
+                        arrows: false,
                         dots: true,
                         slidesToShow: 1,
                         slidesToScroll: 1
@@ -1030,6 +1071,7 @@
         var imgs = $('.slider img');
         imgs.each(function () {
             var item = $(this).closest('.item');
+            
             item.css({
                 // 'background-image': 'url(' + $(this).attr('src') + ')',
                 'background-position': 'center',
@@ -1042,7 +1084,7 @@
 
         //slide benefit mobile
         $('.one-time').slick({
-            // dots: true,
+            dots: true,
             infinite: false,
             speed: 300,
             slidesToShow: 1,
@@ -1053,7 +1095,7 @@
             arrows: false,
             dots: true,
             slidesToShow: 3,
-            slidesToScroll: 1,
+            slidesToScroll: 2,
             autoplay: true,
             autoplaySpeed: 5000,
             responsive: [
@@ -1088,8 +1130,14 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
+    
     <!-- custom -->
     <script src="/js/custom.js"></script>
+    <!-- animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

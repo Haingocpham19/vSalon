@@ -205,7 +205,7 @@ body .stuff {
   padding-top: 68px;
 }
 .introduction {
-  display:block;
+  display: block;
   min-height: auto;
   // background-image: url("../images/background.jpg");
   color: #fff;
@@ -217,7 +217,7 @@ body .stuff {
     position: relative;
     .carousel-item {
       img {
-        width:100%;;
+        width: 100%;
         height: 100%;
         visibility: visible;
       }
@@ -257,49 +257,49 @@ body .stuff {
     }
   }
 }
-.introduction-mobile{
-  width:100%;
-  height:auto;
-  display:none;
+.introduction-mobile {
+  width: 100%;
+  height: auto;
+  display: none;
   position: relative;
-  .inner{
-    .text-intro{
-      top:8%;
+  .inner {
+    .text-intro {
+      top: 8%;
       width: 80%;
-      margin:0 20px;
-      color: #2F4858;
+      margin: 0 20px;
+      color: #2f4858;
       font-weight: 700;
-      font-size:28px;
+      font-size: 28px;
       position: absolute;
-      span{
+      span {
         font-weight: 700;
-        color:#3bb54a;
+        color: #3bb54a;
       }
-      button{
-        margin-top:20px;
-        outline:none;
-        border:none;
-        color:#fff;
+      button {
+        margin-top: 20px;
+        outline: none;
+        border: none;
+        color: #fff;
         font-family: Inter;
         font-size: 20px;
         font-style: normal;
         height: 48px;
-        width: 242px;        
-        background: #3BB54A;
+        width: 242px;
+        background: #3bb54a;
         border-radius: 36px;
       }
     }
   }
-  .banner-mobile{
-    display:block;
+  .banner-mobile {
+    display: block;
     width: auto;
     height: 100%;
     min-height: 553px;
   }
-  .banner-tablet{
+  .banner-tablet {
     height: 100%;
     width: auto;
-    display:none;
+    display: none;
     min-height: 768px;
   }
 }
@@ -387,7 +387,7 @@ body .stuff {
     position: relative;
   }
   .slick-slide:after {
-    background-color: rgba(0, 0, 0, 0.05);
+    // background-color: rgba(0, 0, 0, 0.05);
     border-radius: 15px !important;
     content: "";
     position: absolute;
@@ -400,7 +400,7 @@ body .stuff {
   }
 
   .item.slick-slide {
-    transform: scale(0.7) translate(0px);
+    transform: scale(0.75) translate(0px);
     border-radius: 15px !important;
   }
 
@@ -410,7 +410,7 @@ body .stuff {
   }
 
   .item.slick-slide.slick-center + .slick-slide + .item.slick-slide {
-    transform: scale(0.7) translate(0px);
+    transform: scale(0.75) translate(0px);
     z-index: 5;
   }
 
@@ -427,10 +427,27 @@ body .stuff {
   .slick-center:after {
     opacity: 0;
   }
+  .slick-prev {
+    content: "";
+    background:#E1F3E3;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    left: -50px;
+  }
+
+  .slick-next {
+    content: "";
+    background: #E1F3E3;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    right: -50px;
+  }
 }
 // using on mobile
 .benefit-intro-mobile {
-  display:none;
+  display: none;
   max-height: 550px;
   margin-bottom: 80px;
   h2 {
@@ -452,27 +469,27 @@ body .stuff {
     width: 100%;
     transition: transform 0.4s;
     position: relative;
-    .slide-list-item{
-      background: #FFFFFF;
+    .slide-list-item {
+      background: #ffffff;
       box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.25);
       border-radius: 10px;
-      width:344px !important;
+      width: 344px !important;
       height: 424px;
-      display:block;
-      margin:20px auto;
-      img{
-        width:200px;
-        height:auto;
-        display:block;
-        margin:20px auto;
+      display: block;
+      margin: 20px auto;
+      img {
+        width: 200px;
+        height: auto;
+        display: block;
+        margin: 20px auto;
       }
-      h3{
-        font-size:20px;
+      h3 {
+        font-size: 20px;
         text-align: center;
-        color:#3BB54A;
+        color: #3bb54a;
       }
-      p{
-        padding-top:20px;
+      p {
+        padding-top: 20px;
         text-align: center;
         font-size: 16px;
       }
@@ -552,8 +569,8 @@ body .stuff {
         display: none;
         .img-content {
           width: 100%;
-          img{
-            width: 100%!important;
+          img {
+            width: 100% !important;
           }
         }
         .main-content {
@@ -573,8 +590,8 @@ body .stuff {
 .feature-insite-mobile {
   display: none;
   .inner {
-    h4{
-      padding:20px 0 10px 0;
+    h4 {
+      padding: 20px 0 10px 0;
       font-family: Inter;
       font-size: 28px;
       font-style: normal;
@@ -582,10 +599,10 @@ body .stuff {
       line-height: 34px;
       letter-spacing: 0em;
       text-align: center;
-      color: #2F4858;
-      span{
+      color: #2f4858;
+      span {
         font-weight: 700;
-        color:#3bb54a;
+        color: #3bb54a;
       }
     }
     .card {
@@ -593,7 +610,7 @@ body .stuff {
       background: #f2f2f2;
       border-radius: 8px;
       .card-header {
-        padding:5px;
+        padding: 5px;
         button {
           height: 100%;
           width: 100%;
@@ -617,31 +634,31 @@ body .stuff {
           }
         }
       }
-      .card-body{
-        img{
+      .card-body {
+        img {
           width: 100%;
         }
-        h3{
+        h3 {
           font-size: 18px;
           font-style: normal;
           font-weight: 700;
           line-height: 30px;
           letter-spacing: 0em;
           text-align: left;
-          color: #2F4858;
+          color: #2f4858;
         }
-        p{
+        p {
           font-size: 14px;
           font-style: normal;
           font-weight: 500;
           line-height: 21px;
           letter-spacing: 0em;
-          text-align: left;    
+          text-align: left;
         }
-        ul{
-          margin:0 20px;
-          color:rgba(74, 96, 105, 1);
-          li{
+        ul {
+          margin: 0 20px;
+          color: rgba(74, 96, 105, 1);
+          li {
             font-family: Inter;
             font-size: 16px;
             font-style: normal;
@@ -680,26 +697,30 @@ body .stuff {
       padding: 0 !important;
       display: flex;
       margin-left: 0px;
-
+      .row {
+        padding: 0 !important;
+        margin-right: 0 !important;
+      }
       .price-item {
-        .pack{
+        transition: all 0.5s ease-in-out;
+        .pack {
           padding: 0 20px;
-          transition: all 0.2s ease-in-out;
           justify-content: center;
           position: relative;
-          min-height: 650px;
+          min-height: 580px;
           background: #ffffff;
           z-index: 10;
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           border-radius: 8px;
           .choose-hover {
             position: absolute;
-            top:0%;
+            top: 0%;
             left: 0%;
             opacity: 0.7;
             background-color: #f5f6f9;
             width: 100%;
             height: 150px;
+            border-radius: 8px;
             border-bottom-left-radius: 50%;
             border-bottom-right-radius: 50%;
             z-index: 30;
@@ -718,10 +739,10 @@ body .stuff {
               padding: 10px 20px;
             }
           }
-  
+
           h2 {
             padding-top: 180px;
-            font-size: 36px;
+            font-size: 32px;
           }
           ul {
             padding: 20px 0 20px 20px;
@@ -750,11 +771,12 @@ body .stuff {
               border: none;
             }
           }
-        }      
+        }
       }
       .price-item:hover {
-        z-index:2;
+        z-index: 2;
         transform: scale(1.1);
+
         .choose-hover {
           h3.advanced-pack {
             color: rgb(255, 255, 255);
@@ -763,9 +785,12 @@ body .stuff {
           color: #fff;
           background-color: rgba(59, 181, 74, 1);
         }
+        .choose-hover.adv {
+          background-color: rgba(249, 197, 44, 1);
+        }
       }
       .price-item-intro {
-        z-index:1;
+        z-index: 1;
         width: auto;
         img {
           display: block;
@@ -822,6 +847,7 @@ body .stuff {
   min-height: 480px;
   position: relative;
   .left-adv-app {
+    width: 60%;
     color: #2f4858;
     h2 {
       padding: 60px 20px 40px 20px;
@@ -935,8 +961,8 @@ body .stuff {
         bottom: -45px;
       }
       .slick-dots li button {
-        width: 14px;
-        height: 14px;
+        width: 12px;
+        height: 12px;
         border-radius: 50%;
         background: #c4c4c4;
       }
@@ -1076,12 +1102,6 @@ footer {
       }
     }
   }
-  #ontop{
-    cursor: pointer;
-    position: absolute;
-    right: 5%;
-    bottom:10%;
-  }
 }
 .coppy-right {
   color: #677987;
@@ -1092,11 +1112,25 @@ footer {
     color: #3bb54a;
   }
 }
-@media (max-width: 1199px) {
- 
-  .feature-insite {
-    display: none;
+body {
+  position: relative;
+  #ex-footer {
+    display: block;
+    z-index: 999;
+    right: 20px;
+    bottom: 10px;
+    position: fixed;
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+    #back-to-top {
+      margin: 0 auto;
+      cursor: pointer;
+    }
   }
+}
+@media (max-width: 1199px) {
   .header-section {
     position: relative;
     .list-categories {
@@ -1116,7 +1150,7 @@ footer {
   .benefit-intro-mobile {
     display: none;
   }
- 
+
   .price-list-product {
     .inner {
       h2 {
@@ -1154,7 +1188,6 @@ footer {
       }
     }
   }
-  
 
   .introduction {
     min-height: 600px;
@@ -1206,39 +1239,122 @@ footer {
       }
     }
   }
-}
-
-@media (max-width: 919px) {
-  
-  .benefit-intro{
+  .benefit-intro {
     .item.slick-slide {
-      transform: scale(0.8) translate(90px);
-      border-radius: 15px !important;
+      margin-left: 40px;
+      transform: scale(0.9) translate(40px);
     }
-  
+
     .item.slick-slide.slick-center + .slick-slide {
-      transform: scale(0.8) translate(-90px);
+      transform: scale(0.9) translate(-40px);
       z-index: 10;
     }
   }
- 
- 
-  // .inner{
-  //   top:10% !important;
-  //   left:12% !important;
-  // }
+  .adv-app {
+    background-image: url(../images/banner-ungdung-tablet.png);
+    background-position: right;
+    .left-adv-app {
+      padding-left: 20px;
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 919px) {
+  .benefit-intro {
+    .item.slick-slide {
+      margin-left: 0px;
+      transform: scale(0.8) translate(70px);
+      border-radius: 15px !important;
+    }
+
+    .item.slick-slide.slick-center + .slick-slide {
+      transform: scale(0.8) translate(-70px);
+      z-index: 10;
+    }
+  }
+
+  .price-list-product .inner .price-list-items .price-item .pack {
+    min-height: 700px;
+  }
 }
 /* Large devices (tablet, 992px and down) */
 @media (max-width: 768px) {
-  .introduction{
-    display:none;
+  .introduction {
+    display: none;
   }
   .intro.center {
     position: none;
   }
+  .benefit-intro {
+    .item.slick-slide {
+      margin-left: 0px;
+      transform: scale(0.8) translate(30px);
+      border-radius: 15px !important;
+    }
+
+    .item.slick-slide.slick-center + .slick-slide {
+      transform: scale(0.8) translate(-30px);
+      z-index: 10;
+    }
+  }
+  .price-list-product .inner .price-list-items .price-item .pack {
+    min-height: 600px;
+    height: 80%;
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    ul {
+      padding: 20px 0;
+    }
+  }
+  .adv-app {
+    min-height: 700px;
+    background-image: url(../images/banner-ungdung-tablet.png);
+    background-position: right bottom;
+    background-size: auto;
+    .left-adv-app {
+      width: 100%;
+      h2 {
+        text-align: center;
+        padding: 40px 20px 20px 20px;
+        span {
+          font-size: 36px;
+          font-weight: 700;
+          color: #3bb54a;
+        }
+      }
+      p {
+        padding: 0 20px;
+      }
+      .btn-appstore {
+        position: absolute;
+        bottom: 10%;
+        left: 2%;
+        img {
+          margin-top: 20px;
+          display: block;
+        }
+      }
+    }
+  }
+  .feature-insite {
+    min-height: 900px;
+    .feature-header {
+      .for-pc {
+        display: none !important;
+      }
+      .for-tablet {
+        display: block !important;
+      }
+    }
+    .feature-content {
+      margin: 0 40px;
+    }
+  }
 }
+
 @media (min-width: 576px) and (max-width: 768px) {
-  
   .price-item {
     ul {
       margin: auto;
@@ -1246,30 +1362,27 @@ footer {
       padding: 0px 20px;
     }
   }
-  .introduction-mobile{
-    display:block;
-    .inner{
-      .text-intro{
-        top:20%;
-        font-size:38px;
-        button{
-          display:block;
-          margin-top:40px;
+  .introduction-mobile {
+    display: block;
+    .inner {
+      .text-intro {
+        top: 20%;
+        font-size: 38px;
+        button {
+          display: block;
+          margin-top: 40px;
         }
       }
     }
-    .banner-mobile{
-      display:none !important;
+    .banner-mobile {
+      display: none !important;
     }
-    .banner-tablet{
-      img{
+    .banner-tablet {
+      img {
         min-height: 768px !important;
       }
-      display:block !important;
+      display: block !important;
     }
-  }
-  .feature-insite-mobile{
-    display: block;
   }
   footer {
     .logo-footer {
@@ -1281,26 +1394,56 @@ footer {
       }
     }
   }
+  .item.slick-slide {
+    background: #ffffff;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 256px !important;
+    height: 304x !important;
+    transition: transform 0.4s;
+    position: relative;
+  }
 }
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-  .benefit-intro{
+  body{
+    #ex-footer{
+      display:none !important;
+    }
+  }
+  .adv-app {
+    min-height: 500px;
+    background-size: 92%;
+    h2 {
+      font-size: 32px !important;
+      span {
+        font-size: 32px !important;
+      }
+    }
+    .btn-appstore {
+      position: absolute;
+      transform: scale(0.8);
+    }
+  }
+  .benefit-intro {
     display: none;
     h2 {
       padding-top: 10px;
       font-size: 24px;
     }
   }
-  .benefit-intro-mobile{
+  .benefit-intro-mobile {
     display: block;
     min-height: 600px;
   }
-
-  .feature-insite-mobile{
+  .feature-insite {
+    display: none;
+  }
+  .feature-insite-mobile {
     display: block;
   }
-  .introduction-mobile{
-    display:block;
+  .introduction-mobile {
+    display: block;
   }
   .background-body {
     h3 {
@@ -1341,12 +1484,6 @@ footer {
         display: block;
       }
     }
-    #ontop{
-      cursor: pointer;
-      position: absolute;
-      right: 5%;
-      bottom:2%;
-    }
   }
   .price-list-product {
     h2 {
@@ -1368,7 +1505,16 @@ footer {
       }
     }
   }
- 
+  .price-list-product .inner .price-list-items .price-item .pack {
+    min-height: 600px;
+    height: 80%;
+    display: block;
+    width: 85%;
+    margin: 0 auto;
+    ul {
+      padding: 20px 0;
+    }
+  }
 }
 
 @keyframes fadeIn {
