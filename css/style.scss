@@ -42,6 +42,10 @@ a:hover {
 button {
   outline: none !important;
 }
+.no-padding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
 header {
   overflow: hidden;
   background-color: #fff;
@@ -460,6 +464,8 @@ body{
 }
 // using on mobile
 .benefit-intro-mobile {
+  position: relative;
+  max-width:100%;
   display: none;
   max-height: 550px;
   margin-bottom: 80px;
@@ -486,7 +492,7 @@ body{
       background: #ffffff;
       box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.25);
       border-radius: 10px;
-      width: 344px !important;
+      width: 344px;
       height: 424px;
       display: block;
       margin: 20px auto;
@@ -506,6 +512,13 @@ body{
         text-align: center;
         font-size: 16px;
       }
+    }
+  }
+  .slick-list {
+    padding: 0 !important;
+    .slick-track {
+      width:100%;
+      margin: 10px !important;
     }
   }
 }
@@ -806,8 +819,9 @@ body{
         z-index: 1;
         width: auto;
         img {
+          margin:0 auto;
+          padding-top:100px;
           display: block;
-          margin: 0 auto;
           height: 280px;
           width: auto;
         }
@@ -961,11 +975,12 @@ body{
           }
         }
       }
-      // & .slick-list {
-      //   .slick-track {
-      //     margin: 20px !important;
-      //   }
-      // }
+      .slick-list {
+        padding: 0 !important;
+        .slick-track {
+          width: 100%;
+        }
+      }
       .slick-dots li button:before {
         display: block;
         font-size: 0;
@@ -1184,7 +1199,7 @@ body {
       }
     }
     .price-item-intro {
-      margin-top: 20px;
+      margin:20px;
       img {
         width: 80%;
         height: 80%;
