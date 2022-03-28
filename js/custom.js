@@ -23,7 +23,9 @@ function myFunction() {
 $(document).ready(function(){
 
     $('.content:first').show();
-    $('.feature-header li:first').addClass('active');
+    $('.feature-header .for-pc li:first').addClass('active');
+    $('.feature-header .for-tablet li:first').addClass('active');
+
 
     $('.feature-header li').click(function(){
         index = $(this).index();
@@ -37,6 +39,7 @@ $(document).ready(function(){
 
 
 //click ontop
+var fixed = document.querySelector('.fixed');
 var mybutton = document.getElementById("back-to-top");
 window.onscroll = function() {
   scrollFunction()
@@ -44,14 +47,16 @@ window.onscroll = function() {
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    fixed.style.boxShadow = "0 0 6px #2c1818";
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
+    fixed.style.boxShadow = "none";
   }
 }
 // Bind your button click, scroll direction and effect speed
 document.getElementById("back-to-top").onclick = function() {
-  scrollTo(0, 8000); // it will take 8 seconds to reach to top.
+  scrollTo(0, 1000); // it will take 8 seconds to reach to top.
 
 }
 
