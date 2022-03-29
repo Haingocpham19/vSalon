@@ -27,9 +27,25 @@ $(document).ready(function(){
     $('.feature-header .for-tablet li:first').addClass('active');
 
 
-    $('.feature-header li').click(function(){
+    $('.feature-header .for-pc li').click(function(){
         index = $(this).index();
         $('.feature-header li').removeClass('active');
+        $(this).addClass('active');
+        $('.content').hide();
+        $('.content').eq(index).show();
+    })
+    $('.for-tablet ul:first li').click(function(){
+      index = $(this).index();
+      console.log(index);
+      $('.for-tablet  li').removeClass('active');
+      $(this).addClass('active');
+      $('.content').hide();
+      $('.content').eq(index).show();
+    })
+      $('.for-tablet ul:last li').click(function(){
+        index = $(this).index()+4;
+        console.log(index);
+        $('.for-tablet  li').removeClass('active');
         $(this).addClass('active');
         $('.content').hide();
         $('.content').eq(index).show();
@@ -97,37 +113,3 @@ function easeOutCuaic(t) {
   return t * t * t + 1;
 }
 
-
-
-// let lastKnownScrollPosition = 0;
-// let ticking = false;
-
-// function doSomething(scrollPos) {
-//   const countAnimate = document.querySelectorAll('#animateX').length;
-//     for (let i = 0; i < countAnimate; i++) {
-//       document.querySelectorAll('#animateX')[i].classList.add('animate__animated', 'animate__bounceOutLeft' , "animate__fadeInUp");
-//     }
-
-//   // element.addEventListener('animationend', () => {
-//   //   // do something
-//   // });
-// }
-
-// document.addEventListener('scroll', function(e) {
-//   lastKnownScrollPosition = window.scrollY;
-
-//   if (!ticking) {
-//     window.requestAnimationFrame(function() {
-//       doSomething(lastKnownScrollPosition);
-//       ticking = false;
-//     });
-
-//     ticking = true;
-
-//     const countAnimate = document.querySelectorAll('#animateX').length;
-//     for (let i = 0; i < countAnimate; i++) {
-//       document.querySelectorAll('#animateX')[i].classList.remove('animate__fadeInUp');
-//     }
-//   }
-
-// });
