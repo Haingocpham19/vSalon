@@ -36,7 +36,6 @@ $(document).ready(function(){
     })
     $('.for-tablet ul:first li').click(function(){
       index = $(this).index();
-      console.log(index);
       $('.for-tablet  li').removeClass('active');
       $(this).addClass('active');
       $('.content').hide();
@@ -112,4 +111,30 @@ function easeOutCuaic(t) {
   t--;
   return t * t * t + 1;
 }
+//show hide change language
+function ShowHideLanguage(selectDom){
 
+  var btn = document.querySelector(selectDom+" svg" );
+  console.log(btn);
+  var selectFlag = document.querySelector(selectDom +' ul')
+  btn.addEventListener('click',function(){
+    for (let i = 0; i <= 1; i++) {
+      document.querySelectorAll(selectDom +' ul li')[i].style.display = "block";
+      document.querySelector(selectDom+ ' li').classList.remove('active');
+    }
+  })
+  selectFlag.addEventListener('click', function(e) {
+    e = e || window.event;
+    var target = e.target || e.srcElement,
+        text = target.textContent || target.innerText;   
+    console.log(target.closest('li'));
+    target.closest('li').classList.add('active');
+    for (let i = 0; i <= 1; i++) {
+      document.querySelectorAll(selectDom+ ' ul li')[i].style.display = "none";
+      document.querySelector(selectDom +' li.active').style.display = "block";
+    }
+  }, false);
+}
+
+ShowHideLanguage(".change-language");
+ShowHideLanguage(".change-language-mobile");

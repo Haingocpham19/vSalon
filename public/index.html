@@ -50,23 +50,22 @@
                         </div>
                         <div class="change-stuff d-flex justify-content-between">
                             <div class="change-language">
-                                <div class="flag-item">
-                                    <img src="/images/2560px-Flag_of_Vietnam.svg.png" width="24px" height="17.14px">
-                                    vi
-                                </div>
-                                <div id="myDropdown" class="dropdown-content">
-                                    <a href="#">vn</a>
-                                    <a href="#">vn</a>
-                                    <a href="#">vn</a>
-                                    <a href="#">vn</a>
-                                </div>
-                                <div class="dropbtn">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                                    </svg>
-                                </div>
+                                <ul>
+                                    <li class="active">
+                                        <img src="/images/2560px-Flag_of_Vietnam.svg.png" width="24px" height="17.14px">
+                                        vi
+                                    </li>
+                                    <li>
+                                        <img src="/images/flag-america.png" width="24px" height="17.14px">
+                                        en
+                                    </li>
+                                </ul>                     
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                   
                             </div>
                             <div class="action-login-register ">
                                 <button>Đăng ký</button>
@@ -108,16 +107,25 @@
                                     <a href="" class="nav__mobile-link">Phản hồi</a>
                                 </li>
                                 <li>
-                                    <img src="/images/2560px-Flag_of_Vietnam.svg.png" width="24px" height="17.14px">
-                                    Vi<span>
+                                    <div class="change-language-mobile">
+                                        <ul>
+                                            <li class="active">
+                                                <img src="/images/2560px-Flag_of_Vietnam.svg.png" width="24px" height="17.14px">
+                                                vi
+                                            </li>
+                                            <li>
+                                                <img src="/images/flag-america.png" width="24px" height="17.14px">
+                                                en
+                                            </li>
+                                        </ul>                     
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-chevron-down" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd"
                                             d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                                        </svg>
-                                    </span>
+                                        </svg>                 
+                                    </div>
                                 </li>
-                                <li class="p-0">
+                                <li>
                                     <div class="action-login-register d-flex justify-content-around">
                                         <button>Đăng ký</button>
                                         <button>Đăng nhập</button>
@@ -222,14 +230,6 @@
             <div class="slider">
                 <div class="item">
                     <div class="frame">
-                        <img class="icon-benefit" src="/images/icon-intro-1.png">
-                        <h3>Gắn kết khách hàng</h3>
-                        <p>Đem đến sự chuyên nghiệp và trải nghiệm dịch vụ tốt nhất cho khách.
-                        </p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="frame">
                         <img class="icon-benefit" src="/images/icon-intro-2.png">
                         <h3>Điều phối lịch hẹn</h3>
                         <p>Giúp nhân viên tăng năng xuất làm việc. Quản lý hiệu quả từ xa.
@@ -288,6 +288,14 @@
                     <div class="frame">
                         <img class="icon-benefit" src="/images/icon-intro-3.png">
                         <h3>Quản lý hiệu quả</h3>
+                        <p>Đem đến sự chuyên nghiệp và trải nghiệm dịch vụ tốt nhất cho khách.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="frame">
+                        <img class="icon-benefit" src="/images/icon-intro-1.png">
+                        <h3>Gắn kết khách hàng</h3>
                         <p>Đem đến sự chuyên nghiệp và trải nghiệm dịch vụ tốt nhất cho khách.
                         </p>
                     </div>
@@ -297,19 +305,11 @@
     </div>
     <!-- loi ich khi su dung vSalon mobile -->
     <div class="inner benefit-intro-mobile">
-        <div data-aos="fade-up"  class="animate__animated animate__bounce animate__fadeInUp">
+        <div data-aos="fade-up" class="animate__animated animate__bounce animate__fadeInUp">
             <h2>Lợi ích khi sử dụng <span>vSalon</span></h2>
             <h6>Hãy để chúng tôi đồng hành cùng thành công của bạn</h6>
         </div>
         <div class="single-item">
-            <div class="item">
-                <div class="slide-list-item">
-                    <img class="icon-benefit" src="/images/icon-intro-1.png">
-                    <h3>Gắn kết khách hàng</h3>
-                    <p>Đem đến sự chuyên nghiệp và trải nghiệm dịch vụ tốt nhất cho khách.
-                    </p>
-                </div>
-            </div>
             <div class="item">
                 <div class="slide-list-item">
                     <img class="icon-benefit" src="/images/icon-intro-2.png">
@@ -322,6 +322,14 @@
                 <div class="slide-list-item">
                     <img class="icon-benefit" src="/images/icon-intro-3.png">
                     <h3>Quản lý hiệu quả</h3>
+                    <p>Đem đến sự chuyên nghiệp và trải nghiệm dịch vụ tốt nhất cho khách.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="slide-list-item">
+                    <img class="icon-benefit" src="/images/icon-intro-1.png">
+                    <h3>Gắn kết khách hàng</h3>
                     <p>Đem đến sự chuyên nghiệp và trải nghiệm dịch vụ tốt nhất cho khách.
                     </p>
                 </div>
@@ -476,11 +484,17 @@
                             </h3>
                             Chỉ mất vài phút, bạn đã có thể TẠO VÀ ÁP DỤNG KHUYẾN MẠI cho từng mặt hàng hay nhóm hàng,
                             giá trị khuyến mại linh hoạt theo đơn vị tính (chiếc, bộ; gói…); số tiền cụ thể (vnđ) hoặc %
-                            (giá trị đơn hàng, giá trị hàng tặng, điểm tích lũy…). <span>Tất cả các thông tin về hàng khuyến
-                            mại và giá trị khuyến mại đều được thể hiện rõ ràng trên hóa đơn (trừ điểm tích lũy), giúp
-                            người bán hàng và cả khách hàng có thể dễ ràng tra soát. Không chỉ vậy, khi phát sinh giao
-                            dịch Trả hàng thì giá trị khuyến mại đã được áp dụng cho khách cũng sẽ được thể hiện trên
-                            hóa đơn Trả hàng, giúp bạn hay nhân viên không bị nhầm lẫn khi hoàn tiền cho khách.</span>
+                            (giá trị đơn hàng, giá trị hàng tặng, điểm tích lũy…).<span id="dots"></span><span
+                                id="more">Tất cả các thông tin về hàng khuyến
+                                mại và giá trị khuyến mại đều được thể hiện rõ ràng trên hóa đơn (trừ điểm tích lũy),
+                                giúp
+                                người bán hàng và cả khách hàng có thể dễ ràng tra soát. Không chỉ vậy, khi phát sinh
+                                giao
+                                dịch Trả hàng thì giá trị khuyến mại đã được áp dụng cho khách cũng sẽ được thể hiện
+                                trên
+                                hóa đơn Trả hàng, giúp bạn hay nhân viên không bị nhầm lẫn khi hoàn tiền cho
+                                khách.</span>
+                            <a onclick="myFunction()" id="myBtn"><b>Hiển thị thêm</b></a>
                         </div>
                     </div>
                 </div>
@@ -525,8 +539,10 @@
                             <p>
                                 Bạn muốn nắm được doanh thu bán hàng cụ thể đến từng ngày, lịch sử giao dịch mua hàng,
                                 doanh số bán hàng của từng nhân viên hay công nợ của từng chi nhánh? Chúng tôi thấu hiểu
-                                những mối bận tâm của một người quản lý như bạn. <span>Vì vậy, e-spa cung cấp cho bạn HỆ THỐNG
-                                    BÁO CÁO chính xác, sinh động và dễ hiểu. Những biểu đồ trực quan giúp bạn có cái nhìn
+                                những mối bận tâm của một người quản lý như bạn. <span>Vì vậy, e-spa cung cấp cho bạn HỆ
+                                    THỐNG
+                                    BÁO CÁO chính xác, sinh động và dễ hiểu. Những biểu đồ trực quan giúp bạn có cái
+                                    nhìn
                                     toàn diện về cửa hàng, so sánh hoạt động giữa các chi nhánh để đưa ra những đánh giá
                                     đúng đắn trong hoạt động kinh doanh.</span>
                             </p>
@@ -829,7 +845,7 @@
                     </p>
                 </div>
             </div>
-            
+
         </div>
     </div>
     <div class="background-body">
@@ -865,6 +881,7 @@
             <div data-aos="fade-up" class="res-ctm-header">
                 <h3>Lắng nghe cảm nhận của khách hàng về <span>vSalon</span></h3>
                 <p>Sự hài lòng của khách hàng chính là thành công lớn nhất của chúng tôi</p>
+                <hr>
             </div>
             <div class="slider-response">
                 <div class="response-item">
@@ -969,7 +986,8 @@
     <div class="adv-cal">
         <div data-aos="fade-up" class="inner">
             <img src="/images//5000plus.png">
-            <h2>Khách hàng đã sử dụng vSalon Sự hài lòng của khách hàng chính là thành công lớn nhất của chúng tôi</h2>
+            <h2 class="first-h2">Khách hàng đã sử dụng vSalon</h2>
+            <h2>Sự hài lòng của khách hàng chính là thành công lớn nhất của chúng tôi</h2>
         </div>
     </div>
     <!-- dang ky dung thu -->
@@ -987,14 +1005,9 @@
                         <input type="text" class="form-control" placeholder="Nhập mail và số điện thoại của bạn"
                             aria-label="Recipient's username" aria-describedby="basic-addon2">
                         <div class="input-group-append">
-                            <button class="btn-dkn"type="button">Đăng ký ngay</button>
+                            <button class="btn-dkn" type="button">Đăng ký ngay !</button>
                         </div>
                     </div>
-                    <!-- <div class="input-box">
-                        <img src="/images/vector-email.png" alt="">
-                        <input placeholder="Nhập mail và số điện thoại của bạn" type="text">
-                        <button>Đăng ký ngay</button>
-                    </div> -->
                 </form>
             </div>
         </div>
@@ -1135,24 +1148,24 @@
             {
                 arrows: false,
                 responsive: [
-                {
-                    breakpoint: 1200,
-                    settings: {
-                        arrows: false,
-                        slidesToShow: 2,
-                        dots: true,
-                        slidesToScroll: 2,
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            arrows: false,
+                            slidesToShow: 2,
+                            dots: true,
+                            slidesToScroll: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 720,
+                        settings: {
+                            arrows: false,
+                            slidesToShow: 1,
+                            dots: true,
+                            slidesToScroll: 1,
+                        }
                     }
-                },
-                {
-                    breakpoint: 650,
-                    settings: {
-                        arrows: false,
-                        slidesToShow: 1,
-                        dots: true,
-                        slidesToScroll: 1,
-                    }
-                }
                 ]
             }
         );
@@ -1202,12 +1215,37 @@
     <!-- animation -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-        <!-- readmore -->
+    <!-- readmore -->
     <script src="/node_modules/readmore-js/readmore.min.js"></script>
 
     <script>$('.main-content').readmore({ speed: 75, lessLink: '<a href="#">Read less</a>' });</script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+            var marginBelow = document.querySelector(".feature-insite");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "<b>Hiển thị thêm</b>";
+                moreText.style.display = "none";
+                marginBelow.style.margin = "0";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "<b>Hiển thị bớt</b>";
+                moreText.style.display = "inline";
+                if (window.matchMedia("(max-width: 768px)").matches) {
+                    marginBelow.style.margin = "0 0 150px 0";
+                }
+                else if (window.matchMedia("(max-width: 992px)").matches) {
+                    marginBelow.style.margin = "0 0 120px 0";
+                }
+            }
+        }
     </script>
 </body>
 
