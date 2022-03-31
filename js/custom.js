@@ -115,7 +115,6 @@ function easeOutCuaic(t) {
 function ShowHideLanguage(selectDom){
 
   var btn = document.querySelector(selectDom+" svg" );
-  console.log(btn);
   var selectFlag = document.querySelector(selectDom +' ul')
   btn.addEventListener('click',function(){
     for (let i = 0; i <= 1; i++) {
@@ -127,7 +126,6 @@ function ShowHideLanguage(selectDom){
     e = e || window.event;
     var target = e.target || e.srcElement,
         text = target.textContent || target.innerText;   
-    console.log(target.closest('li'));
     target.closest('li').classList.add('active');
     for (let i = 0; i <= 1; i++) {
       document.querySelectorAll(selectDom+ ' ul li')[i].style.display = "none";

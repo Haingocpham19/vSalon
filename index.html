@@ -48,7 +48,7 @@
                             <a href="#">Ứng dụng Mobile</a>
                             <a href="#">Phản hồi</a>
                         </div>
-                        <div class="change-stuff d-flex justify-content-between">
+                        <div class="change-stuff d-flex justify-content-around">
                             <div class="change-language">
                                 <ul>
                                     <li class="active">
@@ -59,13 +59,13 @@
                                         <img src="/images/flag-america.png" width="24px" height="17.14px">
                                         en
                                     </li>
-                                </ul>                     
+                                </ul>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                    class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
                                 </svg>
-                   
+
                             </div>
                             <div class="action-login-register ">
                                 <button>Đăng ký</button>
@@ -110,19 +110,20 @@
                                     <div class="change-language-mobile">
                                         <ul>
                                             <li class="active">
-                                                <img src="/images/2560px-Flag_of_Vietnam.svg.png" width="24px" height="17.14px">
+                                                <img src="/images/2560px-Flag_of_Vietnam.svg.png" width="24px"
+                                                    height="17.14px">
                                                 vi
                                             </li>
                                             <li>
                                                 <img src="/images/flag-america.png" width="24px" height="17.14px">
                                                 en
                                             </li>
-                                        </ul>                     
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                                        </svg>                 
+                                        </ul>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                        </svg>
                                     </div>
                                 </li>
                                 <li>
@@ -484,7 +485,7 @@
                             </h3>
                             Chỉ mất vài phút, bạn đã có thể TẠO VÀ ÁP DỤNG KHUYẾN MẠI cho từng mặt hàng hay nhóm hàng,
                             giá trị khuyến mại linh hoạt theo đơn vị tính (chiếc, bộ; gói…); số tiền cụ thể (vnđ) hoặc %
-                            (giá trị đơn hàng, giá trị hàng tặng, điểm tích lũy…).<span id="dots"></span><span
+                            (giá trị đơn hàng, giá trị hàng tặng, điểm tích lũy…).<span id="dots">...</span><span
                                 id="more">Tất cả các thông tin về hàng khuyến
                                 mại và giá trị khuyến mại đều được thể hiện rõ ràng trên hóa đơn (trừ điểm tích lũy),
                                 giúp
@@ -494,7 +495,7 @@
                                 trên
                                 hóa đơn Trả hàng, giúp bạn hay nhân viên không bị nhầm lẫn khi hoàn tiền cho
                                 khách.</span>
-                            <a onclick="myFunction()" id="myBtn"><b>Hiển thị thêm</b></a>
+                            <a onclick="toggleContent()" id="myBtn"><b>Hiển thị thêm</b></a>
                         </div>
                     </div>
                 </div>
@@ -508,8 +509,10 @@
                             </h3>
                             vSalon giúp bạn quản lý tồn kho chính xác tới từng mặt hàng cụ thể và chi tiết trong từng
                             chi nhánh, gạt đi nỗi lo muôn thuở về những sản phẩm chồng chất mà không soát nổi con số như
-                            tình trạng các cửa hàng hay gặp phải. Theo đó, bạn sẽ chủ động nắm được mặt hàng nào đang
-                            bán chạy, số lượng hàng còn tồn trong kho để đưa ra quyết định nhập hàng lần kế tiếp.
+                            tình trạng các cửa hàng hay gặp phải.<span id="dots2">...</span><span
+                            id="more2"> Theo đó, bạn sẽ chủ động nắm được mặt hàng nào đang
+                            bán chạy, số lượng hàng còn tồn trong kho để đưa ra quyết định nhập hàng lần kế tiếp.</span>
+                            <a onclick="toggleContent()" id="myBtn2"><b>Hiển thị thêm</b></a>
                         </div>
                     </div>
                 </div>
@@ -885,98 +888,116 @@
             </div>
             <div class="slider-response">
                 <div class="response-item">
-                    <div class="info-customer">
-                        <img src="/images/client-160x160 1.png" alt="img-user">
-                        <h3>CHỊ HUẾ</h3>
-                        <h5>Marketing Ritta Hair Salon</h5>
-                        <div class="border-bt"></div>
-                    </div>
-                    <div class="quotes-customer">
-                        <img src="/images/quotes-icon.png" alt="">
-                        <div class="qoutes-content">
-                            Phần mềm e-spa hỗ trợ rất tốt trong các chiến dịch Marketing của chúng tôi đến với khách
-                            hàng, nhất là các dịp lễ trong năm, không còn phải tốn nhiều chi phí maketing đắt đỏ, nhưng
-                            thông điệp của chúng tôi vẫn truyền tải được đến với đối tượng khách hàng.
+                    <div class="res-item">
+                        <div class="info-customer">
+                            <img src="/images/client-160x160 1.png" alt="img-user">
+                            <h3>CHỊ HUẾ</h3>
+                            <h5>Marketing Ritta Hair Salon</h5>
+                            <div class="border-bt"></div>
+                        </div>
+                        <div class="quotes-customer">
+                            <img src="/images/quotes-icon.png" alt="">
+                            <div class="qoutes-content">
+                                Phần mềm e-spa hỗ trợ rất tốt trong các chiến dịch Marketing của chúng tôi đến với khách
+                                hàng, nhất là các dịp lễ trong năm, không còn phải tốn nhiều chi phí maketing đắt đỏ,
+                                nhưng
+                                thông điệp của chúng tôi vẫn truyền tải được đến với đối tượng khách hàng.
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="response-item">
-                    <div class="info-customer">
-                        <img src="/images/client-160x160 2.png" alt="img-user">
-                        <h3>BÀ HELEN TRẦN</h3>
-                        <h5>Giám đốc Eden Beauty</h5>
-                        <div class="border-bt"></div>
-                    </div>
-                    <div class="quotes-customer">
-                        <img src="/images/quotes-icon.png" alt="">
-                        <div class="qoutes-content">
-                            Phần mềm e-spa hỗ trợ rất tốt trong các chiến dịch Marketing của chúng tôi đến với khách
-                            hàng, nhất là các dịp lễ trong năm, không còn phải tốn nhiều chi phí maketing đắt đỏ, nhưng
-                            thông điệp của chúng tôi vẫn truyền tải được đến với đối tượng khách hàng.
+                    <div class="res-item">
+                        <div class="info-customer">
+                            <img src="/images/client-160x160 2.png" alt="img-user">
+                            <h3>BÀ HELEN TRẦN</h3>
+                            <h5>Giám đốc Eden Beauty</h5>
+                            <div class="border-bt"></div>
+                        </div>
+                        <div class="quotes-customer">
+                            <img src="/images/quotes-icon.png" alt="">
+                            <div class="qoutes-content">
+                                Phần mềm e-spa hỗ trợ rất tốt trong các chiến dịch Marketing của chúng tôi đến với khách
+                                hàng, nhất là các dịp lễ trong năm, không còn phải tốn nhiều chi phí maketing đắt đỏ,
+                                nhưng
+                                thông điệp của chúng tôi vẫn truyền tải được đến với đối tượng khách hàng.
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="response-item">
-                    <div class="info-customer">
-                        <img src="/images/client-160x160 3.png" alt="img-user">
-                        <h3>ANH NGỌC ANH</h3>
-                        <h5>Giám đốc chuỗi Spa Lagertroemie</h5>
-                        <div class="border-bt"></div>
-                    </div>
-                    <div class="quotes-customer">
-                        <img src="/images/quotes-icon.png" alt="">
-                        <div class="qoutes-content">
-                            Phần mềm e-spa hỗ trợ rất tốt trong các chiến dịch Marketing của chúng tôi đến với khách
-                            hàng, nhất là các dịp lễ trong năm, không còn phải tốn nhiều chi phí maketing đắt đỏ, nhưng
-                            thông điệp của chúng tôi vẫn truyền tải được đến với đối tượng khách hàng.
+                    <div class="res-item">
+                        <div class="info-customer">
+                            <img src="/images/client-160x160 3.png" alt="img-user">
+                            <h3>ANH NGỌC ANH</h3>
+                            <h5>Giám đốc chuỗi Spa Lagertroemie</h5>
+                            <div class="border-bt"></div>
+                        </div>
+                        <div class="quotes-customer">
+                            <img src="/images/quotes-icon.png" alt="">
+                            <div class="qoutes-content">
+                                Phần mềm e-spa hỗ trợ rất tốt trong các chiến dịch Marketing của chúng tôi đến với khách
+                                hàng, nhất là các dịp lễ trong năm, không còn phải tốn nhiều chi phí maketing đắt đỏ,
+                                nhưng
+                                thông điệp của chúng tôi vẫn truyền tải được đến với đối tượng khách hàng.
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="response-item">
-                    <div class="info-customer">
-                        <img src="/images/client-160x160 1.png" alt="img-user">
-                        <h3>CHỊ HUẾ</h3>
-                        <h5>Marketing Ritta Hair Salon</h5>
-                        <div class="border-bt"></div>
-                    </div>
-                    <div class="quotes-customer">
-                        <img src="/images/quotes-icon.png" alt="">
-                        <div class="qoutes-content">
-                            Phần mềm e-spa hỗ trợ rất tốt trong các chiến dịch Marketing của chúng tôi đến với khách
-                            hàng, nhất là các dịp lễ trong năm, không còn phải tốn nhiều chi phí maketing đắt đỏ, nhưng
-                            thông điệp của chúng tôi vẫn truyền tải được đến với đối tượng khách hàng.
+                    <div class="res-item">
+                        <div class="info-customer">
+                            <img src="/images/client-160x160 1.png" alt="img-user">
+                            <h3>CHỊ HUẾ</h3>
+                            <h5>Marketing Ritta Hair Salon</h5>
+                            <div class="border-bt"></div>
+                        </div>
+                        <div class="quotes-customer">
+                            <img src="/images/quotes-icon.png" alt="">
+                            <div class="qoutes-content">
+                                Phần mềm e-spa hỗ trợ rất tốt trong các chiến dịch Marketing của chúng tôi đến với khách
+                                hàng, nhất là các dịp lễ trong năm, không còn phải tốn nhiều chi phí maketing đắt đỏ,
+                                nhưng
+                                thông điệp của chúng tôi vẫn truyền tải được đến với đối tượng khách hàng.
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="response-item">
-                    <div class="info-customer">
-                        <img src="/images/client-160x160 2.png" alt="img-user">
-                        <h3>BÀ HELEN TRẦN</h3>
-                        <h5>Giám đốc Eden Beauty</h5>
-                        <div class="border-bt"></div>
-                    </div>
-                    <div class="quotes-customer">
-                        <img src="/images/quotes-icon.png" alt="">
-                        <div class="qoutes-content">
-                            Phần mềm e-spa hỗ trợ rất tốt trong các chiến dịch Marketing của chúng tôi đến với khách
-                            hàng, nhất là các dịp lễ trong năm, không còn phải tốn nhiều chi phí maketing đắt đỏ, nhưng
-                            thông điệp của chúng tôi vẫn truyền tải được đến với đối tượng khách hàng.
+                    <div class="res-item">
+                        <div class="info-customer">
+                            <img src="/images/client-160x160 2.png" alt="img-user">
+                            <h3>BÀ HELEN TRẦN</h3>
+                            <h5>Giám đốc Eden Beauty</h5>
+                            <div class="border-bt"></div>
+                        </div>
+                        <div class="quotes-customer">
+                            <img src="/images/quotes-icon.png" alt="">
+                            <div class="qoutes-content">
+                                Phần mềm e-spa hỗ trợ rất tốt trong các chiến dịch Marketing của chúng tôi đến với khách
+                                hàng, nhất là các dịp lễ trong năm, không còn phải tốn nhiều chi phí maketing đắt đỏ,
+                                nhưng
+                                thông điệp của chúng tôi vẫn truyền tải được đến với đối tượng khách hàng.
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="response-item">
-                    <div class="info-customer">
-                        <img src="/images/client-160x160 3.png" alt="img-user">
-                        <h3>ANH NGỌC ANH</h3>
-                        <h5>Giám đốc chuỗi Spa Lagertroemie</h5>
-                        <div class="border-bt"></div>
-                    </div>
-                    <div class="quotes-customer">
-                        <img src="/images/quotes-icon.png" alt="">
-                        <div class="qoutes-content">
-                            Phần mềm e-spa hỗ trợ rất tốt trong các chiến dịch Marketing của chúng tôi đến với khách
-                            hàng, nhất là các dịp lễ trong năm, không còn phải tốn nhiều chi phí maketing đắt đỏ, nhưng
-                            thông điệp của chúng tôi vẫn truyền tải được đến với đối tượng khách hàng.
+                    <div class="res-item">
+                        <div class="info-customer">
+                            <img src="/images/client-160x160 3.png" alt="img-user">
+                            <h3>ANH NGỌC ANH</h3>
+                            <h5>Giám đốc chuỗi Spa Lagertroemie</h5>
+                            <div class="border-bt"></div>
+                        </div>
+                        <div class="quotes-customer">
+                            <img src="/images/quotes-icon.png" alt="">
+                            <div class="qoutes-content">
+                                Phần mềm e-spa hỗ trợ rất tốt trong các chiến dịch Marketing của chúng tôi đến với khách
+                                hàng, nhất là các dịp lễ trong năm, không còn phải tốn nhiều chi phí maketing đắt đỏ,
+                                nhưng
+                                thông điệp của chúng tôi vẫn truyền tải được đến với đối tượng khách hàng.
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1028,10 +1049,10 @@
                         hàng của các spa, salon tóc, thẩm mỹ viện...</p>
                     <div class="social-redirect">
                         <div class="img-social">
-                            <img src="/images/icon-facebook.svg">
+                            <a href="#" target="_blank"><img src="/images/icon-facebook.svg"></a>                       
                         </div>
                         <div class="img-social">
-                            <img src="/images/icon-youtube.svg">
+                            <a href="#" target="_blank"><img src="/images/icon-youtube.svg"></a>
                         </div>
                     </div>
                 </div>
@@ -1223,10 +1244,33 @@
         AOS.init();
     </script>
     <script>
-        function myFunction() {
+        function toggleContent() {
             var dots = document.getElementById("dots");
             var moreText = document.getElementById("more");
             var btnText = document.getElementById("myBtn");
+            var marginBelow = document.querySelector(".feature-insite");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "<b>Hiển thị thêm</b>";
+                moreText.style.display = "none";
+                marginBelow.style.margin = "0";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "<b>Hiển thị bớt</b>";
+                moreText.style.display = "inline";
+                if (window.matchMedia("(max-width: 768px)").matches) {
+                    marginBelow.style.margin = "0 0 150px 0";
+                }
+                else if (window.matchMedia("(max-width: 992px)").matches) {
+                    marginBelow.style.margin = "0 0 120px 0";
+                }
+            }
+        }
+        function toggleContent2() {
+            var dots = document.getElementById("dots2");
+            var moreText = document.getElementById("more2");
+            var btnText = document.getElementById("myBtn2");
             var marginBelow = document.querySelector(".feature-insite");
 
             if (dots.style.display === "none") {
